@@ -67,6 +67,10 @@ class FxuSettlementRecorder {
     if (this.isWriting) return;
     if (!this.isAfter1815()) return;
 
+    // Hafta sonu kontrolü (0: Pazar, 6: Cumartesi)
+    const currentDay = new Date().getDay();
+    if (currentDay === 0 || currentDay === 6) return;
+
     const fxu = this.marketDataService.getFxuSnapshot();
     if (!fxu) return;
     if (fxu.settlement == null) return;

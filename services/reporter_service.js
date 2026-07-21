@@ -46,9 +46,12 @@ class ReporterService {
           const meksaAccount = await this.api.getViopFreeBalanceDetails();
           const freeNakit = Number(meksaAccount?.cekilebilirTeminat || 0);
           
-          const amt = Number(position.tutar || 0);
+          const amtStr = String(position.tutar || "0").replace(",", ".");
+          const amt = Number(amtStr);
           const activeLot = Math.abs(amt);
-          const entryPrice = Number(position.islemFiyati || 0);
+          
+          const maliyetStr = String(position.maliyet || "0").replace(",", ".");
+          const entryPrice = Number(maliyetStr);
           
           let currentSide = "NONE";
           if (amt > 0) currentSide = "LONG";

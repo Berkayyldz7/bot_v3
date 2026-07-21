@@ -187,14 +187,7 @@ const recorder = new FxuSettlementRecorder(marketData, settlementAverage, {
     outputFile: "./data/fxu-settlements.json",
 });
 
-// Cumartesi (6) veya Pazar (0) ise recorder hiç çalışmasın, çöp veri yazmasın:
-const currentDay = new Date().getDay();
-if (currentDay !== 0 && currentDay !== 6) {
-    recorder.start();
-} else {
-    console.log("⚠️ [REKORDER KİLİDİ] Hafta sonu olduğu için uzlaşı kaydedici başlatılmadı.");
-}
-
+recorder.start();
 sendTelegramMessage("Sunucuda başarıyla ayağa kalktım. Trade işlemini başlatmak için lütfen aşağıdaki yeşil butona basın! 🔌");
 setInterval(checkTelegramCommands, 1000);
 
