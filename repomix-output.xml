@@ -1,0 +1,3269 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+data/
+  tmp/
+    samples-2026-04-17.json
+    samples-2026-04-17.jsonl
+  dayclose-history.json
+  fxu-settlements.json
+playground/
+  proto/
+    Derivative.proto
+    Symbol.proto
+  calavarg.js
+  calculate_average.js
+  dnm.js
+  getFreeBalance.js
+  getOrderDetails.js
+  getPositionDetails.js
+  lpongorder.js
+  oop_test.js
+  realtimedata.js
+proto/
+  Derivative.proto
+  Symbol.proto
+services/
+  proto/
+    Derivative.proto
+    Symbol.proto
+  api_engine.js
+  create_token.js
+  data_flow.js
+  fxu_settlement_recorder.js
+  merket_data_service.js
+  SettlementAverage.js
+.gitignore
+app.js
+mynotes.txt
+notes_viop.txt
+notes.txt
+package.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="playground/calculate_average.js">
+const { SettlementAverage } = require("../services/SettlementAverage");
+
+const settlementAverage = new SettlementAverage();
+
+console.log("XU100 ortalama:", settlementAverage.getAverage5());
+</file>
+
+<file path="data/tmp/samples-2026-04-17.json">
+[]
+</file>
+
+<file path="data/tmp/samples-2026-04-17.jsonl">
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:03","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:03.029Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:06","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:06.029Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:09","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:09.031Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:12","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:12.031Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:15","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:15.033Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:18","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:18.034Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:21","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:21.035Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:24","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:24.037Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:27","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:27.038Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:30","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:30.038Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:33","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:33.040Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:36","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:36.041Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:39","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:39.042Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:42","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:42.043Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:45","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:45.043Z"}
+{"symbolCode":"XU100","date":"2026-04-17","time":"02:55:48","updateDate":"2026-04-16T18:10:11.000+03","dayClose":14252.38,"last":14201.05,"bid":0,"ask":0,"capturedAt":"2026-04-16T23:55:48.044Z"}
+</file>
+
+<file path="data/dayclose-history.json">
+{
+  "XU100": [
+    {
+      "date": "2026-04-15",
+      "dayClose": 0
+    },
+    {
+      "date": "2026-04-16",
+      "dayClose": 14252.38
+    },
+    {
+      "date": "2026-04-09",
+      "dayClose": 10123.4
+    },
+    {
+      "date": "2026-04-10",
+      "dayClose": 10220.8
+    },
+    {
+      "date": "2026-04-11",
+      "dayClose": 10087.2
+    },
+    {
+      "date": "2026-04-14",
+      "dayClose": 10301.6
+    },
+    {
+      "date": "2026-04-15",
+      "dayClose": 10420.1
+    },
+    {
+      "date": "2026-04-17",
+      "dayClose": 14252.38
+    }
+  ],
+  "F_XU0300426": [
+    {
+      "date": "2026-04-09",
+      "dayClose": 11780
+    },
+    {
+      "date": "2026-04-10",
+      "dayClose": 11820
+    },
+    {
+      "date": "2026-04-11",
+      "dayClose": 11710
+    },
+    {
+      "date": "2026-04-14",
+      "dayClose": 11895
+    },
+    {
+      "date": "2026-04-15",
+      "dayClose": 11940
+    }
+  ],
+  "updatedAt": "2026-04-17T02:59:59+03:00"
+}
+</file>
+
+<file path="playground/proto/Derivative.proto">
+syntax="proto2";
+package messages;
+
+option java_package = "com.matriksdata.radix.messages";
+option java_outer_classname = "Derivative";
+
+message DerivativeMessage {
+  required sint32 symbolId = 1;
+  optional string symbolCode = 2; // sembol kodu
+  optional string symbolDesc = 3; // sembol açıklaması
+  optional string updateDate = 4; // date format: yyyy-MM-ddTHH:mm:ss
+  optional double bid = 5; // son alış fiyatı
+  optional double ask = 6; // son satış fiyatı
+  optional double low = 7; // seans içinde işlem gören en düşük fiyat
+  optional double high = 8; // seans içinde işlem gören en yüksek fiyat
+  optional double last = 9; // son fiyat (islem fiyati)
+  optional double dayClose = 10; // önceki günün kapanış fiyatı
+  optional int32 fractionCount = 11; // fiyat için virgülden sonraki basamak sayısı.
+  optional double strikePrice = 12; // kullanim fiyati
+  optional string maturity = 13; // date format:  yyyy-MM-dd ISO format
+  optional string underlying = 14; // dayanak varlik
+
+  enum OptionClass {
+	P = 0;
+	C = 1;
+  }
+  optional OptionClass optionClass = 15; //option class P:PUT C:CALL
+  optional double dailyLow = 16; // gun içinde işlem gören en düşük fiyat
+  optional double dailyHigh = 17; // gun içinde işlem gören en yüksek fiyat
+  optional double quantity = 18; // işlem adedi
+  optional double volume = 19; // işlem hacmi
+  optional double difference = 20; // fark = işlem gören son fiyat - onceki gunun kapanis fiyati
+  optional double differencePercent = 21; // fark yuzdesi
+  optional double sevenDaysDifPer = 22; // 7 gunluk fark yuzdesi
+  optional double thirtyDaysDifPer = 23; // 30 gunluk fark yuzdesi
+  optional double fiftytwoWeekDifPer = 24; // 52 haftalik fark yuzdesi
+  optional double monthHigh = 25; // ay icindeki en yuksek deger
+  optional double monthLow = 26; // ay icindeki en dusuk deger
+  optional double yearHigh = 27; // yil icindeki en yuksek deger
+  optional double yearLow = 28; // yil icndeki en dusuk deger
+  optional double priceMean = 29; // gun icindeki agirlikli fiyat ortalamasi
+  optional double limitUp = 30; // tavan fiyat
+  optional double limitDown = 31; // taban fiyat
+  optional double settlement = 32; // uzlasma
+  optional double settlementPerDif = 33; // uzlasma %fark
+  optional int64 openInterest = 34; // Acik pozisyon
+  optional double theoricalPrice = 35; // Teorik Fiyat
+  optional double theoricelPDifPer = 36; // Teorik Fiyat %Fark
+  optional double dailyVolume = 37; // Gunluk içi toplam hacim
+  optional double priceStep = 38; // Fiyat adimi
+  optional bool   openForTrade = 39; // true false
+  optional string tradeDate = 40;
+  optional double open = 41;
+  optional double dailyQuantity = 42; // Gün ici toplam lot (adet)
+  optional string actionType = 43; //
+  optional int32 brutSwap = 44 [deprecated=true];
+  optional double totalTradeCount = 45;
+  optional double lastQuantity = 46; // Son işlem adedi
+  optional double openInterestChange = 47;
+  optional double weekLow = 48; // Haftalık Düşük
+  optional double weekHigh = 49; // Haftalık Yüksek
+  optional double weekClose = 50; // Önceki Hafta Kapanış
+  optional double monthClose = 51; // Önceki Ay Kapanış
+  optional double yearClose = 52; // Önceki Yıl Kapanış
+  optional double preSettlement = 53; // Önceki Uzlaşma
+  optional int64 askSize = 54;
+  optional int64 bidSize = 55;
+  optional double rate = 56;
+  optional string marketMaker = 57; // Piyasa Yapıcı (İhraçcı)
+  optional double marketMakerAsk = 58; // Piyasa Yapıcı Satış
+  optional double marketMakerBid = 59; // Piyasa Yapıcı Alış
+  optional double prevYearClose = 60; // Önceki Yıl Kapanış
+  optional string riskLevel = 61; // Risk seviyesi
+  optional double marketMakerAskClose = 62;
+  optional double marketMakerBidClose = 63;
+  optional double weekPriceMean = 64;
+  optional double monthPriceMean = 65;
+  optional double yearPriceMean = 66;
+  optional double incrementalQuantity = 67 [ default = 0.0];
+
+  enum PublishReason{
+      UPDATE = 0;
+      REFRESH = 1;
+  }
+  optional PublishReason publishReason = 68 [default = UPDATE];
+  optional int32 stockStatus = 69;
+  optional double eqPrice = 70;  // Teorik eşleşme fiyatı
+  optional double eqQuantity = 71; // Teorik eşleşme adet
+  optional double eqRemainingBidQuantity = 72; // Teorik eşleşme kalan alış adedi
+  optional double eqRemainingAskQuantity = 73; // Teorik eşleşme kalan satış adedi
+  optional double initialMargin = 74; //Başlangıç Teminatı
+}
+</file>
+
+<file path="playground/proto/Symbol.proto">
+syntax="proto2";
+package messages;
+
+option java_package = "com.matriksdata.radix.messages";
+option java_outer_classname = "Symbol";
+
+message SymbolMessage {
+  required sint32 symbolId = 1;
+  optional string symbolCode = 2; // sembol kodu
+  optional string symbolDesc = 3; // sembol açıklaması
+  optional string updateDate = 4; // date format: yyyy-MM-ddTHH:mm:ssZ
+  optional double bid = 5; // anlık alış fiyatı
+  optional double ask = 6; // anlık satış fiyatı
+  optional double low = 7; // seans içinde işlem gören en düşük fiyat
+  optional double high = 8; // seans içinde işlem gören en yüksek fiyat
+  optional double last = 9; // son fiyat (islem fiyati)
+  optional double dayClose = 10; // bir önceki günün kapanış fiyatı
+  optional int32  fractionCount = 11; // fiyat için virgülden sonraki basamak sayısı.
+  optional double dailyLow = 12; // gun içinde işlem gören en düşük fiyat
+  optional double dailyHigh = 13; // gun içinde işlem gören en yüksek fiyat
+  optional double quantity = 14; // işlem adedi
+  optional double volume = 15; // işlem hacmi
+  optional double difference = 16; // fark = işlem gören son fiyat - onceki gunun kapanis fiyati
+  optional double differencePercent = 17; // fark yuzdesi
+  optional double days7DifPer = 18; // 7 gunluk fark yuzdesi
+  optional double days30DifPer = 19; // 30 gunluk fark yuzdesi
+  optional double week52DifPer = 20; // 52 haftalik fark yuzdesi
+  optional double monthHigh = 21; // ay icindeki en yuksek deger
+  optional double monthLow = 22; // ay icindeki en dusuk deger
+  optional double yearHigh = 23; // yil icindeki en yuksek deger
+  optional double yearLow = 24; // yil icndeki en dusuk deger
+  optional double priceMean = 25; // gun icindeki agirlikli fiyat ortalamasi
+  optional double limitUp = 26; // tavan fiyat
+  optional double limitDown = 27; // taban fiyat
+  optional double netProceeds = 28; // Net Kar
+  optional double priceProceeds = 29; // F/K
+  optional double marketValue = 30; // Piyasa Degeri
+  optional double marketValueUsd = 31; // Piyasa Degeri USD
+  optional double marValBookVal = 32; // PD/DD
+  optional double equity = 33; // Ozsermaye
+  optional double capital = 34; // Sermaye
+  optional double circulationShare = 35; // Dolasimdaki Pay
+  optional double circulationSharePer = 36; // Dolasimdaki pay yuzdesi
+  optional string symbolGroup = 37; // Sembol grubu A,B,C,D
+  optional double dailyVolume = 38; // Gunluk işlem hacmi
+  optional bool   sessionIsOpen = 39; // true false
+  optional bool   openForTrade = 40; // true false
+  optional double priceStep = 41; // fiyat adimis
+  optional double basePrice = 42;
+  optional string symbolType = 43;
+  optional int32 tradeFraction = 44;
+  optional string stockSymbolCode = 45;
+  optional string tradeDate = 46;
+  optional double open = 47;
+  optional double dailyQuantity = 48;
+  optional string actionType = 49;
+  optional int32 brutSwap = 50  [deprecated=true];
+  optional double totalTradeCount = 51;
+  optional double lastQuantity = 52;
+  optional double weekLow = 53;
+  optional double weekHigh = 54;
+  optional double weekClose = 55;
+  optional double monthClose = 56;
+  optional double yearClose = 57;
+  optional string period = 58;
+  optional double shiftedNetProceed = 59;
+  optional int64 askSize = 60;
+  optional int64 bidSize = 61;
+  optional double eqPrice = 62;  // equilibrium price
+  optional double eqQuantity = 63;
+  optional double eqRemainingBidQuantity = 64;
+  optional double eqRemainingAskQuantity = 65;
+  optional double prevYearClose = 66;
+  optional int32 direciton = 67;
+  optional double weekPriceMean = 68;
+  optional double monthPriceMean = 69;
+  optional double yearPriceMean = 70;
+  optional double beta100 = 71;
+  optional double cashNetDividend = 72;
+  optional double dividendYield = 73;
+  optional int32 stockStatus = 74;
+}
+</file>
+
+<file path="playground/calavarg.js">
+const { AverageCalculator } = require("../services/avarage_calculator");
+
+const calculator = new AverageCalculator();
+
+console.log("XU100 ortalama:", calculator.getXu100Average());
+console.log("VIOP ortalama:", calculator.getViopAverage());
+console.log("Tum rapor:", calculator.getAllReports());
+</file>
+
+<file path="playground/getFreeBalance.js">
+const {MeksaApi} = require("../services/api_engine");
+const dotenv = require("dotenv");
+const path = require("path");
+
+dotenv.config({
+  path: path.resolve(__dirname, "../.env")
+});
+
+async function main() {
+  const api = new MeksaApi({
+    customerNo: process.env.CUSTOMER_NO,
+    password: process.env.PASSWORD,
+    token: process.env.TOKEN,
+
+  });
+  try {
+
+    free_balance = await api.getViopFreeBalanceDetails();
+    console.log("Viop bakiye:", free_balance || []);
+
+
+  } catch (error) {
+    console.error("Hata:", error.message);
+  }
+}
+
+if (require.main === module) {
+  main();
+}
+</file>
+
+<file path="playground/lpongorder.js">
+const {MeksaApi} = require("../services/api_engine");
+const dotenv = require("dotenv");
+const path = require("path");
+
+dotenv.config({
+  path: path.resolve(__dirname, "../.env")
+});
+
+async function main() {
+  const api = new MeksaApi({
+    customerNo: process.env.CUSTOMER_NO,
+    password: process.env.PASSWORD,
+    token: process.env.TOKEN,
+
+  });
+  try {
+
+
+
+
+
+  } catch (error) {
+    console.error("Hata:", error.message);
+  }
+}
+
+if (require.main === module) {
+  main();
+}
+</file>
+
+<file path="playground/oop_test.js">
+const mqtt = require("mqtt");
+const pb = require("protobufjs");
+const dotenv = require("dotenv");
+const path = require("path");
+
+dotenv.config({
+  path: path.resolve(__dirname, "../.env"),
+});
+
+const symbolMessage = pb
+  .loadSync(path.resolve(__dirname, "./proto/Symbol.proto"))
+  .lookupType("messages.SymbolMessage");
+
+const derivativeMessage = pb
+  .loadSync(path.resolve(__dirname, "./proto/Derivative.proto"))
+  .lookupType("messages.DerivativeMessage");
+
+const state = {
+  bist: null,
+  bistTime: null,
+  fxu: null,
+  fxuTime: null,
+};
+
+const options = {
+  reconnectPeriod: 3000,
+  connectTimeout: 5000,
+  keepalive: 60,
+  username: "JWT",
+  password: process.env.PWDd,
+  rejectUnauthorized: false,
+  qos: 0,
+  protocolVersion: 3,
+  protocolId: "MQIsdp",
+};
+
+function isFresh(ts, maxAgeMs = 10000) {
+  if (!ts) return false;
+  return Date.now() - ts < maxAgeMs;
+}
+
+const bistClient = mqtt.connect("wss://dltest.radix.matriksdata.com:443/market", options);
+const fxuClient = mqtt.connect("wss://rttest.radix.matriksdata.com:443/market", options);
+
+bistClient.on("connect", () => {
+  console.log("BIST socket baglandi");
+
+  bistClient.subscribe("mx/symbol/XU100@lvl2", (error) => {
+    if (error) {
+      console.error("BIST subscribe hatasi:", error.message);
+    }
+  });
+});
+
+fxuClient.on("connect", () => {
+  console.log("FXU socket baglandi");
+
+  fxuClient.subscribe(`mx/derivative/${process.env.VIOP_SOZLESME}`, (error) => {
+    if (error) {
+      console.error("FXU subscribe hatasi:", error.message);
+    }
+  });
+});
+
+bistClient.on("message", (topic, payload) => {
+  try {
+    const decoded = symbolMessage.decode(payload);
+
+    state.bist = symbolMessage.toObject(decoded, {
+      longs: Number,
+      enums: String,
+      defaults: true,
+    });
+
+    state.bistTime = Date.now();
+  } catch (error) {
+    console.error("BIST decode hatasi:", error.message);
+  }
+});
+
+fxuClient.on("message", (topic, payload) => {
+  try {
+    const decoded = derivativeMessage.decode(payload);
+
+    state.fxu = derivativeMessage.toObject(decoded, {
+      longs: Number,
+      enums: String,
+      defaults: true,
+    });
+
+    state.fxuTime = Date.now();
+  } catch (error) {
+    console.error("FXU decode hatasi:", error.message);
+  }
+});
+
+bistClient.on("error", (error) => {
+  console.error("BIST socket hatasi:", error.message);
+});
+
+fxuClient.on("error", (error) => {
+  console.error("FXU socket hatasi:", error.message);
+});
+
+setInterval(() => {
+  if (!state.bist || !state.fxu) {
+    return;
+  }
+
+  const bistLive = isFresh(state.bistTime);
+  const fxuLive = isFresh(state.fxuTime);
+
+  if (!bistLive || !fxuLive) {
+    return;
+  }
+
+  console.log("BIST snapshot:", state.bist);
+  console.log("FXU snapshot:", state.fxu);
+}, 1000);
+</file>
+
+<file path="playground/realtimedata.js">
+const { MeksaApi } = require("../services/api_engine");
+const dotenv = require("dotenv");
+const path = require("path");
+
+dotenv.config({
+  path: path.resolve(__dirname, "../.env")
+});
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function main() {
+  const api = new MeksaApi({
+    customerNo: process.env.CUSTOMER_NO,
+    password: process.env.PASSWORD,
+    token: process.env.TOKEN,
+  });
+
+  try {
+    while (true) {
+      const viopPoz = await api.getViopPositionsDetails();
+      const realTimeData = viopPoz.maliyet + (viopPoz.karZarar / 10);
+
+      console.log("Gerçek data:", realTimeData);
+
+      await sleep(2000);
+    }
+  } catch (error) {
+    console.error("Hata:", error.message);
+  }
+}
+
+if (require.main === module) {
+  main();
+}
+</file>
+
+<file path="proto/Derivative.proto">
+syntax="proto2";
+package messages;
+
+option java_package = "com.matriksdata.radix.messages";
+option java_outer_classname = "Derivative";
+
+message DerivativeMessage {
+  required sint32 symbolId = 1;
+  optional string symbolCode = 2; // sembol kodu
+  optional string symbolDesc = 3; // sembol açıklaması
+  optional string updateDate = 4; // date format: yyyy-MM-ddTHH:mm:ss
+  optional double bid = 5; // son alış fiyatı
+  optional double ask = 6; // son satış fiyatı
+  optional double low = 7; // seans içinde işlem gören en düşük fiyat
+  optional double high = 8; // seans içinde işlem gören en yüksek fiyat
+  optional double last = 9; // son fiyat (islem fiyati)
+  optional double dayClose = 10; // önceki günün kapanış fiyatı
+  optional int32 fractionCount = 11; // fiyat için virgülden sonraki basamak sayısı.
+  optional double strikePrice = 12; // kullanim fiyati
+  optional string maturity = 13; // date format:  yyyy-MM-dd ISO format
+  optional string underlying = 14; // dayanak varlik
+
+  enum OptionClass {
+	P = 0;
+	C = 1;
+  }
+  optional OptionClass optionClass = 15; //option class P:PUT C:CALL
+  optional double dailyLow = 16; // gun içinde işlem gören en düşük fiyat
+  optional double dailyHigh = 17; // gun içinde işlem gören en yüksek fiyat
+  optional double quantity = 18; // işlem adedi
+  optional double volume = 19; // işlem hacmi
+  optional double difference = 20; // fark = işlem gören son fiyat - onceki gunun kapanis fiyati
+  optional double differencePercent = 21; // fark yuzdesi
+  optional double sevenDaysDifPer = 22; // 7 gunluk fark yuzdesi
+  optional double thirtyDaysDifPer = 23; // 30 gunluk fark yuzdesi
+  optional double fiftytwoWeekDifPer = 24; // 52 haftalik fark yuzdesi
+  optional double monthHigh = 25; // ay icindeki en yuksek deger
+  optional double monthLow = 26; // ay icindeki en dusuk deger
+  optional double yearHigh = 27; // yil icindeki en yuksek deger
+  optional double yearLow = 28; // yil icndeki en dusuk deger
+  optional double priceMean = 29; // gun icindeki agirlikli fiyat ortalamasi
+  optional double limitUp = 30; // tavan fiyat
+  optional double limitDown = 31; // taban fiyat
+  optional double settlement = 32; // uzlasma
+  optional double settlementPerDif = 33; // uzlasma %fark
+  optional int64 openInterest = 34; // Acik pozisyon
+  optional double theoricalPrice = 35; // Teorik Fiyat
+  optional double theoricelPDifPer = 36; // Teorik Fiyat %Fark
+  optional double dailyVolume = 37; // Gunluk içi toplam hacim
+  optional double priceStep = 38; // Fiyat adimi
+  optional bool   openForTrade = 39; // true false
+  optional string tradeDate = 40;
+  optional double open = 41;
+  optional double dailyQuantity = 42; // Gün ici toplam lot (adet)
+  optional string actionType = 43; //
+  optional int32 brutSwap = 44 [deprecated=true];
+  optional double totalTradeCount = 45;
+  optional double lastQuantity = 46; // Son işlem adedi
+  optional double openInterestChange = 47;
+  optional double weekLow = 48; // Haftalık Düşük
+  optional double weekHigh = 49; // Haftalık Yüksek
+  optional double weekClose = 50; // Önceki Hafta Kapanış
+  optional double monthClose = 51; // Önceki Ay Kapanış
+  optional double yearClose = 52; // Önceki Yıl Kapanış
+  optional double preSettlement = 53; // Önceki Uzlaşma
+  optional int64 askSize = 54;
+  optional int64 bidSize = 55;
+  optional double rate = 56;
+  optional string marketMaker = 57; // Piyasa Yapıcı (İhraçcı)
+  optional double marketMakerAsk = 58; // Piyasa Yapıcı Satış
+  optional double marketMakerBid = 59; // Piyasa Yapıcı Alış
+  optional double prevYearClose = 60; // Önceki Yıl Kapanış
+  optional string riskLevel = 61; // Risk seviyesi
+  optional double marketMakerAskClose = 62;
+  optional double marketMakerBidClose = 63;
+  optional double weekPriceMean = 64;
+  optional double monthPriceMean = 65;
+  optional double yearPriceMean = 66;
+  optional double incrementalQuantity = 67 [ default = 0.0];
+
+  enum PublishReason{
+      UPDATE = 0;
+      REFRESH = 1;
+  }
+  optional PublishReason publishReason = 68 [default = UPDATE];
+  optional int32 stockStatus = 69;
+  optional double eqPrice = 70;  // Teorik eşleşme fiyatı
+  optional double eqQuantity = 71; // Teorik eşleşme adet
+  optional double eqRemainingBidQuantity = 72; // Teorik eşleşme kalan alış adedi
+  optional double eqRemainingAskQuantity = 73; // Teorik eşleşme kalan satış adedi
+  optional double initialMargin = 74; //Başlangıç Teminatı
+}
+</file>
+
+<file path="proto/Symbol.proto">
+syntax="proto2";
+package messages;
+
+option java_package = "com.matriksdata.radix.messages";
+option java_outer_classname = "Symbol";
+
+message SymbolMessage {
+  required sint32 symbolId = 1;
+  optional string symbolCode = 2; // sembol kodu
+  optional string symbolDesc = 3; // sembol açıklaması
+  optional string updateDate = 4; // date format: yyyy-MM-ddTHH:mm:ssZ
+  optional double bid = 5; // anlık alış fiyatı
+  optional double ask = 6; // anlık satış fiyatı
+  optional double low = 7; // seans içinde işlem gören en düşük fiyat
+  optional double high = 8; // seans içinde işlem gören en yüksek fiyat
+  optional double last = 9; // son fiyat (islem fiyati)
+  optional double dayClose = 10; // bir önceki günün kapanış fiyatı
+  optional int32  fractionCount = 11; // fiyat için virgülden sonraki basamak sayısı.
+  optional double dailyLow = 12; // gun içinde işlem gören en düşük fiyat
+  optional double dailyHigh = 13; // gun içinde işlem gören en yüksek fiyat
+  optional double quantity = 14; // işlem adedi
+  optional double volume = 15; // işlem hacmi
+  optional double difference = 16; // fark = işlem gören son fiyat - onceki gunun kapanis fiyati
+  optional double differencePercent = 17; // fark yuzdesi
+  optional double days7DifPer = 18; // 7 gunluk fark yuzdesi
+  optional double days30DifPer = 19; // 30 gunluk fark yuzdesi
+  optional double week52DifPer = 20; // 52 haftalik fark yuzdesi
+  optional double monthHigh = 21; // ay icindeki en yuksek deger
+  optional double monthLow = 22; // ay icindeki en dusuk deger
+  optional double yearHigh = 23; // yil icindeki en yuksek deger
+  optional double yearLow = 24; // yil icndeki en dusuk deger
+  optional double priceMean = 25; // gun icindeki agirlikli fiyat ortalamasi
+  optional double limitUp = 26; // tavan fiyat
+  optional double limitDown = 27; // taban fiyat
+  optional double netProceeds = 28; // Net Kar
+  optional double priceProceeds = 29; // F/K
+  optional double marketValue = 30; // Piyasa Degeri
+  optional double marketValueUsd = 31; // Piyasa Degeri USD
+  optional double marValBookVal = 32; // PD/DD
+  optional double equity = 33; // Ozsermaye
+  optional double capital = 34; // Sermaye
+  optional double circulationShare = 35; // Dolasimdaki Pay
+  optional double circulationSharePer = 36; // Dolasimdaki pay yuzdesi
+  optional string symbolGroup = 37; // Sembol grubu A,B,C,D
+  optional double dailyVolume = 38; // Gunluk işlem hacmi
+  optional bool   sessionIsOpen = 39; // true false
+  optional bool   openForTrade = 40; // true false
+  optional double priceStep = 41; // fiyat adimis
+  optional double basePrice = 42;
+  optional string symbolType = 43;
+  optional int32 tradeFraction = 44;
+  optional string stockSymbolCode = 45;
+  optional string tradeDate = 46;
+  optional double open = 47;
+  optional double dailyQuantity = 48;
+  optional string actionType = 49;
+  optional int32 brutSwap = 50  [deprecated=true];
+  optional double totalTradeCount = 51;
+  optional double lastQuantity = 52;
+  optional double weekLow = 53;
+  optional double weekHigh = 54;
+  optional double weekClose = 55;
+  optional double monthClose = 56;
+  optional double yearClose = 57;
+  optional string period = 58;
+  optional double shiftedNetProceed = 59;
+  optional int64 askSize = 60;
+  optional int64 bidSize = 61;
+  optional double eqPrice = 62;  // equilibrium price
+  optional double eqQuantity = 63;
+  optional double eqRemainingBidQuantity = 64;
+  optional double eqRemainingAskQuantity = 65;
+  optional double prevYearClose = 66;
+  optional int32 direciton = 67;
+  optional double weekPriceMean = 68;
+  optional double monthPriceMean = 69;
+  optional double yearPriceMean = 70;
+  optional double beta100 = 71;
+  optional double cashNetDividend = 72;
+  optional double dividendYield = 73;
+  optional int32 stockStatus = 74;
+}
+</file>
+
+<file path="services/proto/Derivative.proto">
+syntax="proto2";
+package messages;
+
+option java_package = "com.matriksdata.radix.messages";
+option java_outer_classname = "Derivative";
+
+message DerivativeMessage {
+  required sint32 symbolId = 1;
+  optional string symbolCode = 2; // sembol kodu
+  optional string symbolDesc = 3; // sembol açıklaması
+  optional string updateDate = 4; // date format: yyyy-MM-ddTHH:mm:ss
+  optional double bid = 5; // son alış fiyatı
+  optional double ask = 6; // son satış fiyatı
+  optional double low = 7; // seans içinde işlem gören en düşük fiyat
+  optional double high = 8; // seans içinde işlem gören en yüksek fiyat
+  optional double last = 9; // son fiyat (islem fiyati)
+  optional double dayClose = 10; // önceki günün kapanış fiyatı
+  optional int32 fractionCount = 11; // fiyat için virgülden sonraki basamak sayısı.
+  optional double strikePrice = 12; // kullanim fiyati
+  optional string maturity = 13; // date format:  yyyy-MM-dd ISO format
+  optional string underlying = 14; // dayanak varlik
+
+  enum OptionClass {
+	P = 0;
+	C = 1;
+  }
+  optional OptionClass optionClass = 15; //option class P:PUT C:CALL
+  optional double dailyLow = 16; // gun içinde işlem gören en düşük fiyat
+  optional double dailyHigh = 17; // gun içinde işlem gören en yüksek fiyat
+  optional double quantity = 18; // işlem adedi
+  optional double volume = 19; // işlem hacmi
+  optional double difference = 20; // fark = işlem gören son fiyat - onceki gunun kapanis fiyati
+  optional double differencePercent = 21; // fark yuzdesi
+  optional double sevenDaysDifPer = 22; // 7 gunluk fark yuzdesi
+  optional double thirtyDaysDifPer = 23; // 30 gunluk fark yuzdesi
+  optional double fiftytwoWeekDifPer = 24; // 52 haftalik fark yuzdesi
+  optional double monthHigh = 25; // ay icindeki en yuksek deger
+  optional double monthLow = 26; // ay icindeki en dusuk deger
+  optional double yearHigh = 27; // yil icindeki en yuksek deger
+  optional double yearLow = 28; // yil icndeki en dusuk deger
+  optional double priceMean = 29; // gun icindeki agirlikli fiyat ortalamasi
+  optional double limitUp = 30; // tavan fiyat
+  optional double limitDown = 31; // taban fiyat
+  optional double settlement = 32; // uzlasma
+  optional double settlementPerDif = 33; // uzlasma %fark
+  optional int64 openInterest = 34; // Acik pozisyon
+  optional double theoricalPrice = 35; // Teorik Fiyat
+  optional double theoricelPDifPer = 36; // Teorik Fiyat %Fark
+  optional double dailyVolume = 37; // Gunluk içi toplam hacim
+  optional double priceStep = 38; // Fiyat adimi
+  optional bool   openForTrade = 39; // true false
+  optional string tradeDate = 40;
+  optional double open = 41;
+  optional double dailyQuantity = 42; // Gün ici toplam lot (adet)
+  optional string actionType = 43; //
+  optional int32 brutSwap = 44 [deprecated=true];
+  optional double totalTradeCount = 45;
+  optional double lastQuantity = 46; // Son işlem adedi
+  optional double openInterestChange = 47;
+  optional double weekLow = 48; // Haftalık Düşük
+  optional double weekHigh = 49; // Haftalık Yüksek
+  optional double weekClose = 50; // Önceki Hafta Kapanış
+  optional double monthClose = 51; // Önceki Ay Kapanış
+  optional double yearClose = 52; // Önceki Yıl Kapanış
+  optional double preSettlement = 53; // Önceki Uzlaşma
+  optional int64 askSize = 54;
+  optional int64 bidSize = 55;
+  optional double rate = 56;
+  optional string marketMaker = 57; // Piyasa Yapıcı (İhraçcı)
+  optional double marketMakerAsk = 58; // Piyasa Yapıcı Satış
+  optional double marketMakerBid = 59; // Piyasa Yapıcı Alış
+  optional double prevYearClose = 60; // Önceki Yıl Kapanış
+  optional string riskLevel = 61; // Risk seviyesi
+  optional double marketMakerAskClose = 62;
+  optional double marketMakerBidClose = 63;
+  optional double weekPriceMean = 64;
+  optional double monthPriceMean = 65;
+  optional double yearPriceMean = 66;
+  optional double incrementalQuantity = 67 [ default = 0.0];
+
+  enum PublishReason{
+      UPDATE = 0;
+      REFRESH = 1;
+  }
+  optional PublishReason publishReason = 68 [default = UPDATE];
+  optional int32 stockStatus = 69;
+  optional double eqPrice = 70;  // Teorik eşleşme fiyatı
+  optional double eqQuantity = 71; // Teorik eşleşme adet
+  optional double eqRemainingBidQuantity = 72; // Teorik eşleşme kalan alış adedi
+  optional double eqRemainingAskQuantity = 73; // Teorik eşleşme kalan satış adedi
+  optional double initialMargin = 74; //Başlangıç Teminatı
+}
+</file>
+
+<file path="services/proto/Symbol.proto">
+syntax="proto2";
+package messages;
+
+option java_package = "com.matriksdata.radix.messages";
+option java_outer_classname = "Symbol";
+
+message SymbolMessage {
+  required sint32 symbolId = 1;
+  optional string symbolCode = 2; // sembol kodu
+  optional string symbolDesc = 3; // sembol açıklaması
+  optional string updateDate = 4; // date format: yyyy-MM-ddTHH:mm:ssZ
+  optional double bid = 5; // anlık alış fiyatı
+  optional double ask = 6; // anlık satış fiyatı
+  optional double low = 7; // seans içinde işlem gören en düşük fiyat
+  optional double high = 8; // seans içinde işlem gören en yüksek fiyat
+  optional double last = 9; // son fiyat (islem fiyati)
+  optional double dayClose = 10; // bir önceki günün kapanış fiyatı
+  optional int32  fractionCount = 11; // fiyat için virgülden sonraki basamak sayısı.
+  optional double dailyLow = 12; // gun içinde işlem gören en düşük fiyat
+  optional double dailyHigh = 13; // gun içinde işlem gören en yüksek fiyat
+  optional double quantity = 14; // işlem adedi
+  optional double volume = 15; // işlem hacmi
+  optional double difference = 16; // fark = işlem gören son fiyat - onceki gunun kapanis fiyati
+  optional double differencePercent = 17; // fark yuzdesi
+  optional double days7DifPer = 18; // 7 gunluk fark yuzdesi
+  optional double days30DifPer = 19; // 30 gunluk fark yuzdesi
+  optional double week52DifPer = 20; // 52 haftalik fark yuzdesi
+  optional double monthHigh = 21; // ay icindeki en yuksek deger
+  optional double monthLow = 22; // ay icindeki en dusuk deger
+  optional double yearHigh = 23; // yil icindeki en yuksek deger
+  optional double yearLow = 24; // yil icndeki en dusuk deger
+  optional double priceMean = 25; // gun icindeki agirlikli fiyat ortalamasi
+  optional double limitUp = 26; // tavan fiyat
+  optional double limitDown = 27; // taban fiyat
+  optional double netProceeds = 28; // Net Kar
+  optional double priceProceeds = 29; // F/K
+  optional double marketValue = 30; // Piyasa Degeri
+  optional double marketValueUsd = 31; // Piyasa Degeri USD
+  optional double marValBookVal = 32; // PD/DD
+  optional double equity = 33; // Ozsermaye
+  optional double capital = 34; // Sermaye
+  optional double circulationShare = 35; // Dolasimdaki Pay
+  optional double circulationSharePer = 36; // Dolasimdaki pay yuzdesi
+  optional string symbolGroup = 37; // Sembol grubu A,B,C,D
+  optional double dailyVolume = 38; // Gunluk işlem hacmi
+  optional bool   sessionIsOpen = 39; // true false
+  optional bool   openForTrade = 40; // true false
+  optional double priceStep = 41; // fiyat adimis
+  optional double basePrice = 42;
+  optional string symbolType = 43;
+  optional int32 tradeFraction = 44;
+  optional string stockSymbolCode = 45;
+  optional string tradeDate = 46;
+  optional double open = 47;
+  optional double dailyQuantity = 48;
+  optional string actionType = 49;
+  optional int32 brutSwap = 50  [deprecated=true];
+  optional double totalTradeCount = 51;
+  optional double lastQuantity = 52;
+  optional double weekLow = 53;
+  optional double weekHigh = 54;
+  optional double weekClose = 55;
+  optional double monthClose = 56;
+  optional double yearClose = 57;
+  optional string period = 58;
+  optional double shiftedNetProceed = 59;
+  optional int64 askSize = 60;
+  optional int64 bidSize = 61;
+  optional double eqPrice = 62;  // equilibrium price
+  optional double eqQuantity = 63;
+  optional double eqRemainingBidQuantity = 64;
+  optional double eqRemainingAskQuantity = 65;
+  optional double prevYearClose = 66;
+  optional int32 direciton = 67;
+  optional double weekPriceMean = 68;
+  optional double monthPriceMean = 69;
+  optional double yearPriceMean = 70;
+  optional double beta100 = 71;
+  optional double cashNetDividend = 72;
+  optional double dividendYield = 73;
+  optional int32 stockStatus = 74;
+}
+</file>
+
+<file path="services/create_token.js">
+const path = require("path");
+const dotenv = require("dotenv");
+const { MeksaApi } = require("./api_engine");
+
+dotenv.config({
+  path: path.resolve(__dirname, "..", ".env"),
+});
+
+async function main() {
+  const api = new MeksaApi({
+    customerNo: process.env.CUSTOMER_NO,
+    password: process.env.PASSWORD,
+    rumuz: process.env.RUMUZ,
+  });
+
+  try {
+    await api.createToken();
+    console.log("Token alindi:", api.token);
+  } catch (error) {
+    console.error("Hata:", error.message);
+    process.exit(1);
+  }
+}
+
+if (require.main === module) {
+  main();
+}
+</file>
+
+<file path="notes_viop.txt">
+================================================================================
+VIOP BAKİYE (TEMİNAT)
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_TEMINATLAR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVTM:12345|01/04/2026|||3494071.02|0.00|3494071.02|658204|658204|248920|3084787.02|3084787.02|0|2835867.02|İşlemde|258910|0|0|0|
+
+
+================================================================================
+VIOP POZİSYON
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_POZISYONLAR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVPS:12345|01/04/2026|Müş|F_XU0300426|248920.00|0|37|37|-37|-173||14901.00000|-5531130.000000|14949.00000|258910.00|90270.000430|-7770.000000|-5 531 130 TL|-17760.000000|14974.17919
+
+
+================================================================================
+VIOP EMİRLER
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIRLER
+GerceklesenDetay=1
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVGI:12345|6601238|F_XU0300426|S|37|0|14901|5513370|Gerçekleşen|KIE|01/04/2026||01/04/2026 16:10:01|70D9E68402EA6FA4|6601238|37||0|LMT||KIE|14901||0|16:10:01
+BVGI:12345|6599806|F_XU0300426|S|4|0|14953.25|598130|Gerçekleşen|KIE|01/04/2026||01/04/2026 13:05:10|70D9E68401E6E97B|6599806|4||0|LMT||KIE|14953.25||0|13:05:10
+
+
+================================================================================
+VIOP ALIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PKP (Piyasa), LMT (Limitli)  (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+SOZLESME=F_EKGYO0426
+MIKTAR=1
+FIYAT=0
+ISLEM=A
+ORDER_TYPE=PKP
+SURE=KIE
+AKSAM_SEANSI=0
+
+RESPONSE:
+---------
+OK
+MSG:Alım emriniz iletildi!
+HSR:6601398
+
+
+================================================================================
+VIOP SATIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PKP (Piyasa), LMT (Limitli)  (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+SOZLESME=F_EKGYO0426
+MIKTAR=1
+FIYAT=0
+ISLEM=S
+ORDER_TYPE=PKP
+SURE=KIE
+AKSAM_SEANSI=0
+
+RESPONSE:
+---------
+OK
+MSG:Satış emriniz iletildi!
+HSR:6601399
+
+
+================================================================================
+VIOP EMİR İYİLEŞTİRME
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR_IYILESTIRME
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=6601370
+Fiyat=17.71
+Sure=GUN
+SureTarih=01.04.2026
+
+RESPONSE:
+---------
+OK
+MSG:Success
+İyileştirme emri iletildi!
+CAL:BISTECH_VIOP_EMIRLER
+
+
+================================================================================
+VIOP EMİR İPTAL
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR_IPTAL
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=6601370
+
+RESPONSE:
+---------
+OK
+MSG:
+Silme emri iletildi!
+CAL:BISTECH_VIOP_EMIRLER
+</file>
+
+<file path="notes.txt">
+================================================================================
+                    MEKSA BACKOFFICE API - TOKEN TABANLI
+================================================================================
+
+BASE URL: https://esubedv2.meksa.com.tr/entegrasyon/optimus_trade.asp
+METHOD: POST
+
+================================================================================
+LOGIN (TOKEN ALMA)
+================================================================================
+
+NOT:
+--------
+"Rumuz" değeri "Meksa Token" uygulamasından alınacak.
+
+REQUEST:
+--------
+KOMUT=TOKEN_CREATE
+MusteriNo=12345
+Sifre=mypassword
+Rumuz=123456 (MeksaTokenApp)
+
+RESPONSE:
+---------
+OK
+MSG:Success
+TOKEN:9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+PARSING (C#):
+-------------
+string[] response = apiresponse.Split(new string[] { "\n" }, StringSplitOptions.None);
+if (response.Length > 2 && response[2].Contains("TOKEN"))
+{
+    var tokenResponse = response[2].Split(new string[] { ":" }, StringSplitOptions.None);
+    if (tokenResponse.Length > 1)
+    {
+        string token = tokenResponse[1].Trim();
+    }
+}
+
+================================================================================
+SPOT BAKİYE
+================================================================================
+
+REQUEST:
+--------
+KOMUT=HESAPBILGI
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+CBK:0|Cari Bakiye
+CB1:10947582.24|T1 Cari Bakiye
+CB2:11026379.4|T2 Cari Bakiye
+CHS:196646.18|Hisse Toplamı
+OAL:14994071.02|Overall
+T1B:14796211.64|T1 Overall
+T2B:14717096.6|T2 Overall
+LMT:0|Müşteri Kredi Limiti
+ASN:91106.73|Alım Satım Neti
+HOT:G|Güniçi
+GIL:50545922.46|Güniçi İşlem Limiti
+HOT:N|Normal
+ISL:50545922.46|Islem Limiti
+HOT:F|Fon
+FNL:0|Fonlama İşlem Limiti
+HOT:K|Kredili
+KIL:0|Kredili İşlem Limiti
+HOT:A|Açığa Satış
+ASL:0|Açığa İşlem Limiti
+HOT:O|Özel
+HOT:V|Virmanlı Satış
+AVL:39519543.06|Virmanlı Satış Limiti
+OZK:100|T Kredi Özkaynak Oranı 
+OZ1:100|T1 Kredi Özkaynak Oranı 
+OZ2:100|T2 Kredi Özkaynak Oranı
+
+================================================================================
+SPOT POZİSYON
+================================================================================
+
+REQUEST:
+--------
+KOMUT=HESAPPORTFOY
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+HSP:1|CARI|AKBNK|68.15|36577|2492722.55|68.25|36577|0|0|0|0|-0.15
+HSP:1|CARI|GUBRF|484.25|-5334|-2582989.50|481.62|-5334|0|0|0|0|0.55
+HSP:1|CARI|ISCTR|12.99|196851|2557094.49|13.10|196851|0|188822|0|2452797.78|-0.87
+
+================================================================================
+SPOT EMİRLER
+================================================================================
+
+REQUEST:
+--------
+KOMUT=HESAPGUNLUKISLEM
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+GerceklesenOzet=2
+
+RESPONSE:
+---------
+OK
+MSG:Success
+HGI:1|33521692|ASTOR|SAT|12563|0|197.3|2478679.9|??|Gerçekleşti|KIE||1|N|16:08:41|16:08:41|8131784043954354768|33521692|12563|01/04/2026|PYS|
+HGI:1|33521346|EKGYO|AL|2815|0|19.7|55455.5|??|Gerçekleşti|KIE||1|N|16:02:24|16:02:24|8131784048246160410|33521346|2815|01/04/2026|PYS|
+
+
+================================================================================
+SPOT ALIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PYS, LMT (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=HISSEAL
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+MIKTAR=1
+HISSE=PETKM
+FIYAT=0
+ORDER_TYPE=PYS
+SURE=KIE
+
+RESPONSE:
+---------
+OK
+MSG:Alım emriniz iletildi!
+HSR:33522113
+
+
+================================================================================
+SPOT SATIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PYS, LMT (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=HISSESAT
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+MIKTAR=1
+HISSE=PETKM
+FIYAT=0
+ORDER_TYPE=PYS
+SURE=KIE
+
+RESPONSE:
+---------
+OK
+MSG:Satış emriniz iletildi!
+HSR:33522115
+
+
+================================================================================
+SPOT EMİR İYİLEŞTİRME
+================================================================================
+
+REQUEST:
+--------
+KOMUT=HISSEIYILESTIR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=33522077
+FIYAT=19.11
+SURE=GUN
+
+RESPONSE:
+---------
+OK
+MSG:İyileştirme emri iletildi!
+CAL:HESAPGUNLUKISLEM
+
+
+================================================================================
+SPOT EMİR İPTAL
+================================================================================
+
+REQUEST:
+--------
+KOMUT=HISSEEMIRSIL
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=33522077
+
+RESPONSE:
+---------
+OK
+MSG:Success
+Silme emri iletildi!
+CAL:HESAPGUNLUKISLEM
+
+
+================================================================================
+VIOP BAKİYE (TEMİNAT)
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_TEMINATLAR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVTM:12345|01/04/2026|||3494071.02|0.00|3494071.02|658204|658204|248920|3084787.02|3084787.02|0|2835867.02|İşlemde|258910|0|0|0|
+
+
+================================================================================
+VIOP POZİSYON
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_POZISYONLAR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVPS:12345|01/04/2026|Müş|F_XU0300426|248920.00|0|37|37|-37|-173||14901.00000|-5531130.000000|14949.00000|258910.00|90270.000430|-7770.000000|-5 531 130 TL|-17760.000000|14974.17919
+
+
+================================================================================
+VIOP EMİRLER
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIRLER
+GerceklesenDetay=1
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVGI:12345|6601238|F_XU0300426|S|37|0|14901|5513370|Gerçekleşen|KIE|01/04/2026||01/04/2026 16:10:01|70D9E68402EA6FA4|6601238|37||0|LMT||KIE|14901||0|16:10:01
+BVGI:12345|6599806|F_XU0300426|S|4|0|14953.25|598130|Gerçekleşen|KIE|01/04/2026||01/04/2026 13:05:10|70D9E68401E6E97B|6599806|4||0|LMT||KIE|14953.25||0|13:05:10
+
+
+================================================================================
+VIOP ALIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PKP (Piyasa), LMT (Limitli)  (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+SOZLESME=F_EKGYO0426
+MIKTAR=1
+FIYAT=0
+ISLEM=A
+ORDER_TYPE=PKP
+SURE=KIE
+AKSAM_SEANSI=0
+
+RESPONSE:
+---------
+OK
+MSG:Alım emriniz iletildi!
+HSR:6601398
+
+
+================================================================================
+VIOP SATIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PKP (Piyasa), LMT (Limitli)  (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+SOZLESME=F_EKGYO0426
+MIKTAR=1
+FIYAT=0
+ISLEM=S
+ORDER_TYPE=PKP
+SURE=KIE
+AKSAM_SEANSI=0
+
+RESPONSE:
+---------
+OK
+MSG:Satış emriniz iletildi!
+HSR:6601399
+
+
+================================================================================
+VIOP EMİR İYİLEŞTİRME
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR_IYILESTIRME
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=6601370
+Fiyat=17.71
+Sure=GUN
+SureTarih=01.04.2026
+
+RESPONSE:
+---------
+OK
+MSG:Success
+İyileştirme emri iletildi!
+CAL:BISTECH_VIOP_EMIRLER
+
+
+================================================================================
+VIOP EMİR İPTAL
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR_IPTAL
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=6601370
+
+RESPONSE:
+---------
+OK
+MSG:
+Silme emri iletildi!
+CAL:BISTECH_VIOP_EMIRLER
+</file>
+
+<file path="data/fxu-settlements.json">
+[
+  {
+    "date": "2026-04-16",
+    "settlement": 16403
+  },
+  {
+    "date": "2026-04-17",
+    "settlement": 16896
+  },
+  {
+    "date": "2026-04-15",
+    "settlement": 16563
+  },
+  {
+    "date": "2026-04-14",
+    "settlement": 16550
+  },
+  {
+    "date": "2026-04-13",
+    "settlement": 16463
+  },
+  {
+    "date": "2026-04-18",
+    "symbolCode": "F_XU0300426",
+    "settlement": 168960,
+    "updateDate": "2026-04-17T23:00:00.000+03",
+    "recordedAt": "2026-04-19T22:40:01.463Z"
+  },
+  {
+    "date": "2026-04-19",
+    "symbolCode": "F_XU0300426",
+    "settlement": 1689622,
+    "updateDate": "2026-04-17T23:00:00.000+03",
+    "recordedAt": "2026-04-19T23:52:21.104Z"
+  },
+  {
+    "date": "2026-04-20",
+    "symbolCode": "F_XU0300426",
+    "settlement": 16755,
+    "updateDate": "2026-04-20T18:09:59.000+03",
+    "recordedAt": "2026-04-20T15:15:00.423Z"
+  },
+  {
+    "date": "2026-05-20",
+    "settlement": 16506
+  },
+  {
+    "date": "2026-05-21",
+    "settlement": 15207
+  },
+  {
+    "date": "2026-05-22",
+    "settlement": 16157
+  },
+  {
+    "date": "2026-05-25",
+    "settlement": 16109
+  },
+  {
+    "date": "2026-05-26",
+    "settlement": 15759
+  }
+]
+</file>
+
+<file path="playground/getOrderDetails.js">
+const {MeksaApi} = require("../services/api_engine");
+const dotenv = require("dotenv");
+const path = require("path");
+
+dotenv.config({
+  path: path.resolve(__dirname, "../.env")
+});
+
+async function main() {
+  const api = new MeksaApi({
+    customerNo: process.env.CUSTOMER_NO,
+    password: process.env.PASSWORD,
+    token: process.env.TOKEN,
+
+  });
+  try {
+
+
+    const viop_order_details = await api.getViopOrdersDetails();
+    console.log("Viop emir detayları:", viop_order_details || []);
+
+
+  } catch (error) {
+    console.error("Hata:", error.message);
+  }
+}
+
+if (require.main === module) {
+  main();
+}
+</file>
+
+<file path="playground/getPositionDetails.js">
+const {MeksaApi} = require("../services/api_engine");
+const dotenv = require("dotenv");
+const path = require("path");
+
+dotenv.config({
+  path: path.resolve(__dirname, "../.env")
+});
+
+async function main() {
+  const api = new MeksaApi({
+    customerNo: process.env.CUSTOMER_NO,
+    password: process.env.PASSWORD,
+    token: process.env.TOKEN,
+
+  });
+  try {
+    const viop_positions_details = await api.getViopPositionsDetails();
+    console.log("Viop pozisyon detayları:", viop_positions_details || []);
+
+
+  } catch (error) {
+    console.error("Hata:", error.message);
+  }
+}
+
+if (require.main === module) {
+  main();
+}
+</file>
+
+<file path="services/data_flow.js">
+const mqtt = require("mqtt");
+const pb = require("protobufjs");
+const dotenv = require("dotenv");
+const path = require("path");
+
+console.log("[LIVEMARKETSTREAM FILE LOADED]", __filename);
+
+dotenv.config({
+  path: path.resolve(__dirname, "../.env"),
+});
+
+class LiveMarketStream {
+  constructor({
+    xu100Code = "XU100",
+    viopCode = process.env.VIOP_SOZLESME,
+  } = {}) {
+    console.log("[DATA_FLOW CONSTRUCTOR]");
+    console.log("[LIVEMARKETSTREAM CONSTRUCTOR CALLED]");
+
+    if (!viopCode) {
+      throw new Error("VIOP_SOZLESME .env icinde tanimli olmali.");
+    }
+
+    this.xu100Code = xu100Code;
+    this.viopCode = viopCode;
+
+    this.spotHandlers = new Set();
+    this.viopHandlers = new Set();
+
+    this.spotClient = null;
+    this.viopClient = null;
+    this.started = false;
+
+    this.options = {
+      reconnectPeriod: 3000,
+      connectTimeout: 5000,
+      keepalive: 60,
+      username: "JWT",
+      password: process.env.PWDd,
+      rejectUnauthorized: false,
+      qos: 0,
+      protocolVersion: 3,
+      protocolId: "MQIsdp",
+    };
+
+    this.symbolMessage = pb
+      .loadSync(path.resolve(__dirname, "./proto/Symbol.proto"))
+      .lookupType("messages.SymbolMessage");
+
+    this.derivativeMessage = pb
+      .loadSync(path.resolve(__dirname, "./proto/Derivative.proto"))
+      .lookupType("messages.DerivativeMessage");
+  }
+
+  async start() {
+    console.log("[DATA_FLOW START]");
+    console.log("[LIVEMARKETSTREAM START CALLED]");
+
+    if (this.started) {
+      return;
+    }
+
+    await Promise.all([this._connectSpot(), this._connectViop()]);
+    this.started = true;
+  }
+
+  async stop() {
+    const closers = [];
+
+    if (this.spotClient) {
+      const client = this.spotClient;
+      this.spotClient = null;
+      closers.push(new Promise((resolve) => client.end(false, {}, resolve)));
+    }
+
+    if (this.viopClient) {
+      const client = this.viopClient;
+      this.viopClient = null;
+      closers.push(new Promise((resolve) => client.end(false, {}, resolve)));
+    }
+
+    await Promise.all(closers);
+    this.started = false;
+  }
+
+  onXu100(handler) {
+    if (typeof handler !== "function") {
+      throw new Error("onXu100 icin function vermelisiniz.");
+    }
+
+    this.spotHandlers.add(handler);
+    return () => this.spotHandlers.delete(handler);
+  }
+
+  onViop(handler) {
+    if (typeof handler !== "function") {
+      throw new Error("onViop icin function vermelisiniz.");
+    }
+
+    this.viopHandlers.add(handler);
+    return () => this.viopHandlers.delete(handler);
+  }
+
+  _connectSpot() {
+    console.log("[LIVEMARKETSTREAM _connectSpot ENTERED]");
+
+    return new Promise((resolve, reject) => {
+      const client = mqtt.connect(
+        "wss://dltest.radix.matriksdata.com:443/market",
+        this.options
+      );
+
+      this.spotClient = client;
+      let settled = false;
+
+      client.on("connect", () => {
+        client.subscribe(`mx/symbol/${this.xu100Code}@lvl2`, (error, granted) => {
+          if (error) {
+            if (!settled) {
+              settled = true;
+              reject(error);
+            }
+            return;
+          }
+
+          if (!granted || !granted.length) {
+            if (!settled) {
+              settled = true;
+              reject(new Error("XU100 subscribe onayi alinmadi."));
+            }
+            return;
+          }
+
+          if (!settled) {
+            settled = true;
+            resolve();
+          }
+        });
+      });
+
+      client.on("message", (topic, payload) => {
+        if (!topic.includes("mx/symbol")) {
+          return;
+        }
+
+        try {
+          const decoded = this.symbolMessage.decode(payload);
+          if (decoded.symbolCode !== this.xu100Code) {
+            return;
+          }
+
+          const data = {
+            symbolCode: decoded.symbolCode,
+            updateDate: decoded.updateDate || null,
+            last: decoded.last ?? null,
+            dayClose: decoded.dayClose ?? null,
+            bid: decoded.bid ?? null,
+            ask: decoded.ask ?? null,
+            low: decoded.low ?? null,
+            high: decoded.high ?? null,
+            open: decoded.open ?? null,
+            quantity: decoded.quantity ?? null,
+            volume: decoded.volume ?? null,
+            raw: decoded,
+          };
+
+          for (const handler of this.spotHandlers) {
+            handler(data);
+          }
+        } catch (error) {
+          console.error("XU100 decode hatasi:", error.message);
+        }
+      });
+
+      client.on("error", (error) => {
+        if (!settled) {
+          settled = true;
+          reject(error);
+        } else {
+          console.error("XU100 socket hatasi:", error.message);
+        }
+      });
+    });
+  }
+
+  _connectViop() {
+    console.log("[LIVEMARKETSTREAM _connectViop ENTERED]");
+
+    return new Promise((resolve, reject) => {
+      const client = mqtt.connect(
+        "wss://rttest.radix.matriksdata.com:443/market",
+        this.options
+      );
+
+      this.viopClient = client;
+      let settled = false;
+
+      client.on("connect", () => {
+        client.subscribe(`mx/derivative/${this.viopCode}`, (error, granted) => {
+          if (error) {
+            if (!settled) {
+              settled = true;
+              reject(error);
+            }
+            return;
+          }
+
+          if (!granted || !granted.length) {
+            if (!settled) {
+              settled = true;
+              reject(new Error("VIOP subscribe onayi alinmadi."));
+            }
+            return;
+          }
+
+          if (!settled) {
+            settled = true;
+            resolve();
+          }
+        });
+      });
+
+      client.on("message", (topic, payload) => {
+        console.log("[VIOP MESSAGE FIRED]", topic, payload?.length);
+
+        if (!topic.includes("mx/derivative")) {
+          return;
+        }
+
+        try {
+          console.log("[VIOP TOPIC]", topic);
+          console.log("[VIOP PAYLOAD LEN]", payload.length);
+
+          console.log("[BEFORE VIOP DECODE]", topic, payload?.length);
+          const decoded = this.derivativeMessage.decode(payload);
+          console.log("[AFTER VIOP DECODE]", decoded);
+          console.log("[VIOP DECODED]", decoded);
+
+          const objectified = this.derivativeMessage.toObject(decoded, {
+            longs: Number,
+            enums: String,
+            defaults: false,
+            arrays: true,
+            objects: true,
+          });
+
+          console.log("[VIOP RAW DECODED]", decoded);
+          console.log("[VIOP OBJECTIFIED]", objectified);
+          console.log("[VIOP LAST]", decoded.last);
+          console.log("[VIOP DAYCLOSE]", decoded.dayClose);
+
+          if (decoded.symbolCode !== this.viopCode) {
+            return;
+          }
+
+          const data = {
+            symbolCode: decoded.symbolCode,
+            updateDate: decoded.updateDate || null,
+            last: decoded.last ?? null,
+            dayClose: decoded.dayClose ?? null,
+            bid: decoded.bid ?? null,
+            ask: decoded.ask ?? null,
+            low: decoded.low ?? null,
+            high: decoded.high ?? null,
+            open: decoded.open ?? null,
+            quantity: decoded.quantity ?? null,
+            volume: decoded.volume ?? null,
+            initialMargin: decoded.initialMargin ?? null,
+            raw: decoded,
+          };
+
+          for (const handler of this.viopHandlers) {
+            handler(data);
+          }
+        } catch (error) {
+          console.error("VIOP decode hatasi:", error.message);
+        }
+      });
+
+      client.on("error", (error) => {
+        if (!settled) {
+          settled = true;
+          reject(error);
+        } else {
+          console.error("VIOP socket hatasi:", error.message);
+        }
+      });
+    });
+  }
+}
+
+module.exports = {
+  LiveMarketStream,
+};
+</file>
+
+<file path="services/fxu_settlement_recorder.js">
+const fs = require("fs/promises");
+const path = require("path");
+
+class FxuSettlementRecorder {
+  constructor(marketDataService, settlementAverage, options = {}) {
+    this.marketDataService = marketDataService;
+    this.settlementAverage = settlementAverage;
+    this.intervalMs = options.intervalMs || 10000;
+    this.outputFile =
+      options.outputFile ||
+      path.resolve(__dirname, "../data/fxu-settlements.json");
+
+    this.timer = null;
+    this.isWriting = false;
+  }
+
+  start() {
+    if (this.timer) return;
+
+    this.timer = setInterval(() => {
+      this.tick().catch((err) => {
+        console.error("FXU settlement recorder hatasi:", err.message);
+      });
+    }, this.intervalMs);
+  }
+
+  stop() {
+    if (!this.timer) return;
+    clearInterval(this.timer);
+    this.timer = null;
+  }
+
+  isAfter1815(now = new Date()) {
+    const h = now.getHours();
+    const m = now.getMinutes();
+
+    if (h > 18) return true;
+    if (h < 18) return false;
+    return m >= 15;
+  }
+
+  getTodayKey(now = new Date()) {
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  }
+
+  async readJson() {
+    try {
+      const text = await fs.readFile(this.outputFile, "utf8");
+      const parsed = JSON.parse(text);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (err) {
+      if (err.code === "ENOENT") return [];
+      throw err;
+    }
+  }
+
+  async writeJson(data) {
+    await fs.mkdir(path.dirname(this.outputFile), { recursive: true });
+    await fs.writeFile(this.outputFile, JSON.stringify(data, null, 2), "utf8");
+  }
+
+  async tick() {
+    console.log("Recorder tick calisti");
+    if (this.isWriting) return;
+    if (!this.isAfter1815()) return;
+
+    const fxu = this.marketDataService.getFxuSnapshot();
+    if (!fxu) return;
+    if (fxu.settlement == null) return;
+
+    const today = this.getTodayKey();
+
+    this.isWriting = true;
+    try {
+      const rows = await this.readJson();
+
+      const alreadyExists = rows.some((row) => row.date === today);
+      if (alreadyExists) return;
+
+      rows.push({
+        date: today,
+        symbolCode: fxu.symbolCode,
+        settlement: fxu.settlement,
+        updateDate: fxu.updateDate,
+        recordedAt: new Date().toISOString(),
+      });
+
+      await this.writeJson(rows);
+
+      this.settlementAverage.update(rows);
+
+      console.log("FXU settlement kaydedildi:", {
+        date: today,
+        settlement: fxu.settlement,
+      });
+    } finally {
+      this.isWriting = false;
+    }
+  }
+}
+
+module.exports = { FxuSettlementRecorder };
+</file>
+
+<file path="services/merket_data_service.js">
+const mqtt = require("mqtt");
+const pb = require("protobufjs");
+const dotenv = require("dotenv");
+const path = require("path");
+
+dotenv.config({
+  path: path.resolve(__dirname, "../.env"),
+});
+
+class MarketDataService {
+  constructor() {
+    this.symbolMessage = pb
+      .loadSync(path.resolve(__dirname, "./proto/Symbol.proto"))
+      .lookupType("messages.SymbolMessage");
+
+    this.derivativeMessage = pb
+      .loadSync(path.resolve(__dirname, "./proto/Derivative.proto"))
+      .lookupType("messages.DerivativeMessage");
+
+    this.state = {
+      bist: null,
+      bistTime: null,
+      fxu: null,
+      fxuTime: null,
+    };
+
+    this.options = {
+      reconnectPeriod: 3000,
+      connectTimeout: 5000,
+      keepalive: 60,
+      username: "JWT",
+      password: process.env.PWDd,
+      rejectUnauthorized: false,
+      qos: 0,
+      protocolVersion: 3,
+      protocolId: "MQIsdp",
+    };
+
+    this.bistClient = null;
+    this.fxuClient = null;
+    this.debugTimer = null;
+  }
+
+  start() {
+    this.bistClient = mqtt.connect("wss://dltest.radix.matriksdata.com:443/market", this.options);
+    this.fxuClient = mqtt.connect("wss://rttest.radix.matriksdata.com:443/market", this.options);
+
+    this.bistClient.on("connect", () => {
+      console.log("BIST socket baglandi");
+
+      this.bistClient.subscribe("mx/symbol/XU100@lvl2", (error) => {
+        if (error) {
+          console.error("BIST subscribe hatasi:", error.message);
+        }
+      });
+    });
+
+    this.fxuClient.on("connect", () => {
+      console.log("FXU socket baglandi");
+
+      this.fxuClient.subscribe(`mx/derivative/${process.env.VIOP_SOZLESME}`, (error) => {
+        if (error) {
+          console.error("FXU subscribe hatasi:", error.message);
+        }
+      });
+    });
+
+    this.bistClient.on("message", (topic, payload) => {
+      try {
+        const decoded = this.symbolMessage.decode(payload);
+
+        this.state.bist = this.symbolMessage.toObject(decoded, {
+          longs: Number,
+          enums: String,
+          defaults: true,
+        });
+
+        this.state.bistTime = Date.now();
+      } catch (error) {
+        console.error("BIST decode hatasi:", error.message);
+      }
+    });
+
+    this.fxuClient.on("message", (topic, payload) => {
+      try {
+        const decoded = this.derivativeMessage.decode(payload);
+        const partial = this.derivativeMessage.toObject(decoded, {
+          longs: Number,
+          enums: String,
+          defaults: false,
+        });
+
+        this.state.fxu = {
+          ...(this.state.fxu || {}),
+          ...partial,
+        };
+
+        this.state.fxuTime = Date.now();
+      } catch (error) {
+        console.error("FXU decode hatasi:", error.message);
+        console.error("FXU topic:", topic);
+        console.error("FXU payload length:", payload.length);
+        console.error("FXU payload hex:", payload.toString("hex"));
+      }
+    });
+
+    this.bistClient.on("error", (error) => {
+      console.error("BIST socket hatasi:", error.message);
+    });
+
+    this.fxuClient.on("error", (error) => {
+      console.error("FXU socket hatasi:", error.message);
+    });
+
+    // this.debugTimer = setInterval(() => {
+    //   if (!this.state.bist || !this.state.fxu) {
+    //     return;
+    //   }
+
+    //   const bistLive = this.isFresh(this.state.bistTime);
+    //   const fxuLive = this.isFresh(this.state.fxuTime);
+
+    //   if (!bistLive || !fxuLive) {
+    //     return;
+    //   }
+
+    //   console.log("BIST snapshot:", this.state.bist);
+    //   console.log("FXU snapshot:", this.state.fxu);
+    // }, 1000);
+  }
+
+  getBistSnapshot() {
+    return this.state.bist;
+  }
+
+  getFxuSnapshot() {
+    return this.state.fxu;
+  }
+
+  getAllSnapshots() {
+    return {
+      bist: this.state.bist,
+      bistTime: this.state.bistTime,
+      fxu: this.state.fxu,
+      fxuTime: this.state.fxuTime,
+    };
+  }
+
+  getBistSnapshotWithTime() {
+    if (!this.state.bist) return null;
+
+  return {
+    data: this.state.bist,
+    receivedAt: this.state.bistTime,
+    marketTime: this.state.bist.updateDate
+    };
+  }
+  
+  getFxuSnapshotWithTime() {  
+    if (!this.state.fxu) return null;
+
+  return {
+    data: this.state.fxu,
+    receivedAt: this.state.fxuTime,
+    marketTime: this.state.fxu.updateDate
+    };
+  }
+
+  getViopSettlementPrice() {
+    if (!this.state.fxu) return null;
+    if (this.state.fxu.settlement === undefined) return null;
+    return this.state.fxu.settlement
+  }
+
+  getBistClosePrice(){
+    if (!this.state.bist) return null;
+    return this.state.bist.dayClose
+  }
+
+  isFresh(ts, maxAgeMs = 10000) {
+    if (!ts) return false;
+    return Date.now() - ts < maxAgeMs;
+  }
+}
+
+module.exports = {
+  MarketDataService,
+};
+</file>
+
+<file path="services/SettlementAverage.js">
+class SettlementAverage {
+  constructor() {
+    this.rows = [];
+    this.avg5 = null;
+  }
+
+  init(rows = []) {
+    this.rows = Array.isArray(rows) ? [...rows] : [];
+    this.recalculate();
+  }
+
+  update(rows = []) {
+    this.rows = Array.isArray(rows) ? [...rows] : [];
+    this.recalculate();
+  }
+
+  getAverage5() {
+    return this.avg5;
+  }
+
+  recalculate() {
+    const validRows = this.rows
+      .filter((row) => row && row.date && row.settlement != null)
+      .map((row) => ({
+        date: row.date,
+        settlement: Number(row.settlement),
+      }))
+      .filter((row) => {
+        return Number.isFinite(row.settlement) && !this.isWeekend(row.date);
+      })
+      .sort((a, b) => new Date(a.date) - new Date(b.date))
+      .slice(-5);
+
+    if (!validRows.length) {
+      this.avg5 = null;
+      return;
+    }
+
+    const total = validRows.reduce((sum, row) => sum + row.settlement, 0);
+    this.avg5 = total / validRows.length;
+  }
+
+  isWeekend(dateString) {
+    const date = new Date(`${dateString}T12:00:00`);
+    const day = date.getDay();
+
+    return day === 0 || day === 6;
+  }
+}
+
+module.exports = {
+  SettlementAverage,
+};
+</file>
+
+<file path=".gitignore">
+node_modules/
+.env
+.env.*
+dist/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+</file>
+
+<file path="mynotes.txt">
+getviopFreeBalance() 
+
+* metoduyla meksa api üzerinden viop hesabındaki bakiye bilgilerini temin edildi.
+* bu metod bir obje return eder. 
+-->
+  Viop bakiye : {
+
+  hesapNo: '106637',
+  tarih: '09/04/2026',
+  toplamBakiye: 30052.85,
+  kullanilanTeminat: 0,
+  bosBakiye: 30052.85,
+  islemdekiBakiye: '0',
+  rawFields: [
+    '106637',   '09/04/2026',
+    '',         '',
+    '30052.85', '0.00',
+    '30052.85', '0',
+    '0',        '0',
+    '30052.85', '30052.85',
+    '0',        '30052.85',
+    '��lemde',  '0',
+    '0',        '0',
+    '0',        ''
+  ]
+
+}
+
+
+onUpdate metodu bir fonksiyon alıyor ve veri her güncellendiğinde tetikleniyor, 
+
+--> Dolayısıyla içine yazdığımız her kod veri her güncellendiğinde çalıştırılır.
+
+
+
+
+
+* setInterval kullanmadan verilere erişmeye çalışırsak veriler null dönüyor.
+
+  setInterval(() => {
+    console.log("XU100:", liveDataClient.getLatestPrice("XU100"));
+    console.log("F_XU0300426:", liveDataClient.getLatestPrice("F_XU0300426"));
+    }, 1000);
+
+
+
+
+
+SPOT 
+
+
+    const balance = await api.getSpotBalance();
+    console.log("Spot bakiye:", balance.data.CBK?.[0]?.fields?.[0]);
+
+    const orders = await api.getSpotOrders();
+    console.log(
+      "Son emirler:",
+      (orders.data.HGI || []).map((item) => item.fields)
+    );
+
+
+
+
+
+
+16403
+
+
+Uzlaşı ortalamaları için günler, haftaiçi günler al ( 18:15 uzlaşı fiyatı )
+
+17.04.2026 --> 16896.00
+16.04.2026 --> 16403.00
+15.04.2026 --> 16563.00
+14.04.2026 --> 16550.00
+13.04.2026 --> 16463.00
+</file>
+
+<file path="package.json">
+{
+  "name": "meksa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "recorder": "node ./services/run_recorder.js",
+    "take_token": "node ./services/create_token.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "node-fetch": "^2.7.0",
+    "mqtt": "1.14.1",
+    "protobufjs": "^7.1.2"
+  }
+}
+</file>
+
+<file path="playground/dnm.js">
+const {MeksaApi} = require("../services/api_engine");
+const dotenv = require("dotenv");
+const path = require("path");
+
+dotenv.config({
+  path: path.resolve(__dirname, "../.env")
+});
+
+async function main() {
+  const api = new MeksaApi({
+    customerNo: process.env.CUSTOMER_NO,
+    password: process.env.PASSWORD,
+    token: process.env.TOKEN,
+
+  });
+  try {
+    // const viop_postions = await api.getViopPositions();
+    // console.log("Viop pozisyonlar:", viop_postions.data.HVP || []);
+
+    // const teminat = await api.getViopCollateral();
+    // console.log("Viop teminat bilgisi:", teminat || []);
+
+    // const createBuyOrderViop = await api.placeViopBuyOrder({ sozlesme: process.env.VIOP_SOZLESME, quantity: 2, price: 160100, orderType: "LMT", duration: "KIE", aksamSeansi: 1 });
+    // console.log("Viop alis emri sonucu:", createBuyOrderViop.data);
+
+
+    // const viop_açık_poz = await api.getViopOrders({ gerceklesenDetay: 10 });
+    // console.log("Viop açık emirler:", viop_açık_poz || []);
+
+
+
+
+    // ------ aSIL İŞE YARAYACAK KISIMLAR -------
+
+    const viop_bakiye = await api.getViopFreeBalance();
+    console.log("Viop bakiye:", viop_bakiye || []);
+
+    // const viop_açık_poz = await api.getViopOrders({ gerceklesenDetay: 10 });
+    // console.log("Viop açık emirler:", viop_açık_poz || []);
+
+
+    // const createBuyOrderViop = await api.placeViopBuyOrder({ sozlesme: process.env.VIOP_SOZLESME, quantity: 1, price: 0, orderType: "PKP", duration: "KIE", aksamSeansi: 1 });
+    // console.log("Viop alis emri sonucu:", createBuyOrderViop.data);
+
+
+    // const createSellOrderViop = await api.placeViopSellOrder({ sozlesme: process.env.VIOP_SOZLESME, quantity: 1, price: 15088, orderType: "PKP", duration: "KIE", aksamSeansi: 1 });
+    // console.log("Viop satis emri sonucu:", createSellOrderViop.data);
+
+
+    // const viop_açık_poz = await api.getViopPositions();
+    // console.log("Viop pozisyonlar:", viop_açık_poz || []);
+
+
+  } catch (error) {
+    console.error("Hata:", error.message);
+  }
+}
+
+if (require.main === module) {
+  main();
+}
+</file>
+
+<file path="app.js">
+// const { MarketDataService } = require("./services/merket_data_service");
+// const { FxuSettlementRecorder } = require("./services/fxu_settlement_recorder");
+// const { SettlementAverage } = require("./services/SettlementAverage");
+
+// const fs = require("fs");
+
+// const marketData = new MarketDataService();
+// const settlementAverage = new SettlementAverage();
+
+// try {
+//   const text = fs.readFileSync("./data/fxu-settlements.json", "utf8");
+//   const rows = JSON.parse(text);
+//   settlementAverage.init(rows);
+// } catch (error) {
+//   settlementAverage.init([]);
+// }
+
+// marketData.start();
+
+// const recorder = new FxuSettlementRecorder(marketData, settlementAverage, {
+//   intervalMs: 200,
+//   outputFile: "./data/fxu-settlements.json",
+// });
+
+// recorder.start();
+
+// setInterval(() => {
+//   const bist = marketData.getBistSnapshot();
+//   const fxu = marketData.getFxuSnapshot();
+
+//   const fxu_settlement = marketData.getViopSettlementPrice();
+//   const bist_close = marketData.getBistClosePrice();
+
+//   const avg5 = settlementAverage.getAverage5();
+
+//   if (!bist || !fxu) {
+//     console.log("BIST veya FXU verisi henüz alınamadı, bekleniyor...");
+//     return;
+//   }
+
+//   console.log("BIST last:", bist.last);
+//   console.log("FXU last:", fxu.last);
+//   console.log("FXU settlement price:", fxu_settlement);
+//   console.log("BIST close price:", bist_close);
+
+//   console.log("FXU settlement 5 günlük ortalama:", avg5);
+
+//   // Strateji kosullari burada yazilacak
+//   // if (bist.last > bist.dayClose && fxu.last > fxu.dayClose) {
+//   //   emir gonder
+//   // }
+
+
+//   // fxu_settlement_ortalama ( avg5 ) al ( 5 günlük )
+//   // kontratın son fiyatını al ( fxu.last )
+
+//   // eğer kontratın son fiyatı fxu_settlement_ortalamalarının üstündeyse ve mevcut pozisyon yoksa 1 adet long emir ( viopbuyorder ) aç
+//     // Eğer mevcut pozisyon var ve yönü short ise önce kapat sonra long aç ( 2 adet  long emir )
+
+//   // eğer kontratın son fiyatı fxu_settlement_ortalamalarının altındaysa ve mevcut pozisyon yoksa short emir aç ( 1 adet )
+//     // Eğer mevcut pozisyon var ve yönü long ise önce kapat sonra short ( viopsellorder ) aç ( 2 adet emir )
+
+  
+
+
+
+// }, 1000);
+
+
+// const { MarketDataService } = require("./services/merket_data_service");
+// const { FxuSettlementRecorder } = require("./services/fxu_settlement_recorder");
+// const { SettlementAverage } = require("./services/SettlementAverage");
+// const { MeksaApi } = require("./services/api_engine");
+
+// const fs = require("fs");
+
+// const marketData = new MarketDataService();
+// const settlementAverage = new SettlementAverage();
+
+// const api = new MeksaApi({
+//   customerNo: process.env.CUSTOMER_NO,
+//   token: process.env.TOKEN,
+// });
+
+// try {
+//   const text = fs.readFileSync("./data/fxu-settlements.json", "utf8");
+//   const rows = JSON.parse(text);
+//   settlementAverage.init(rows);
+// } catch (error) {
+//   settlementAverage.init([]);
+// }
+
+// marketData.start();
+
+// const recorder = new FxuSettlementRecorder(marketData, settlementAverage, {
+//   intervalMs: 10000,
+//   outputFile: "./data/fxu-settlements.json",
+// });
+
+// recorder.start();
+
+// let isTradeRunning = false;
+
+// setInterval(async () => {
+//   if (isTradeRunning) return;
+
+//   const bist = marketData.getBistSnapshot();
+//   const fxu = marketData.getFxuSnapshot();
+//   const avg5 = settlementAverage.getAverage5();
+
+//   const fxuSettlement = marketData.getViopSettlementPrice();
+//   const bistClose = marketData.getBistClosePrice();
+
+//   if (!bist || !fxu || !avg5) {
+//     console.log("BIST, FXU veya avg5 verisi henüz hazır değil, bekleniyor...");
+//     return;
+//   }
+
+//   const fxuLast = Number(fxu.last);
+//   const settlementAverage5 = Number(avg5);
+
+//   if (!Number.isFinite(fxuLast) || !Number.isFinite(settlementAverage5)) {
+//     return;
+//   }
+
+//   console.log("FXU last:", fxu.last);
+//   console.log("FXU settlement price:", fxuSettlement);
+//   console.log("FXU settlement 5 günlük ortalama:", avg5);
+
+//   isTradeRunning = true;
+
+//   try {
+//     const position = await api.getViopPositionsDetails();
+
+//     let positionSide = "NONE";
+
+//     if (position && position.sozlesmeAdi === process.env.VIOP_SOZLESME) {
+//       const positionAmount = Number(position.tutar || 0);
+
+//       if (positionAmount > 0) {
+//         positionSide = "LONG";
+//       }
+
+//       if (positionAmount < 0) {
+//         positionSide = "SHORT";
+//       }
+//     }
+
+//     if (fxuLast > settlementAverage5) {
+//       if (positionSide === "NONE") {
+//         // await api.placeViopBuyOrder({
+//         //   sozlesme: process.env.VIOP_SOZLESME,
+//         //   quantity: 1,
+//         //   orderType: "PKP",
+//         //   duration: "KIE",
+//         //   aksamSeansi: 0,
+//         // });
+
+//         console.log("LONG emir gonderildi");
+//       }
+
+//       if (positionSide === "SHORT") {
+//         // await api.placeViopBuyOrder({
+//         //   sozlesme: process.env.VIOP_SOZLESME,
+//         //   quantity: 2,
+//         //   orderType: "PKP",
+//         //   duration: "KIE",
+//         //   aksamSeansi: 0,
+//         // });
+
+//         console.log("SHORT kapatildi ve LONG acildi");
+//       }
+//     }
+
+//     if (fxuLast < settlementAverage5) {
+//       if (positionSide === "NONE") {
+//         // await api.placeViopSellOrder({
+//         //   sozlesme: process.env.VIOP_SOZLESME,
+//         //   quantity: 1,
+//         //   orderType: "PKP",
+//         //   duration: "KIE",
+//         //   aksamSeansi: 0,
+//         // });
+
+//         console.log("SHORT emir gonderildi");
+//       }
+
+//       if (positionSide === "LONG") {
+//         // await api.placeViopSellOrder({
+//         //   sozlesme: process.env.VIOP_SOZLESME,
+//         //   quantity: 2,
+//         //   orderType: "PKP",
+//         //   duration: "KIE",
+//         //   aksamSeansi: 0,
+//         // });
+
+//         console.log("LONG kapatildi ve SHORT acildi");
+//       }
+//     }
+//   } catch (error) {
+//     console.error("Emir strateji hatasi:", error.message);
+//   } finally {
+//     isTradeRunning = false;
+//   }
+// }, 2000);
+
+
+const { MarketDataService } = require("./services/merket_data_service");
+const { FxuSettlementRecorder } = require("./services/fxu_settlement_recorder");
+const { SettlementAverage } = require("./services/SettlementAverage");
+const { MeksaApi } = require("./services/api_engine");
+
+const fs = require("fs");
+
+const marketData = new MarketDataService();
+const settlementAverage = new SettlementAverage();
+
+const api = new MeksaApi({
+  customerNo: process.env.CUSTOMER_NO,
+  token: process.env.TOKEN,
+});
+
+try {
+  const text = fs.readFileSync("./data/fxu-settlements.json", "utf8");
+  const rows = JSON.parse(text);
+  settlementAverage.init(rows);
+} catch (error) {
+  settlementAverage.init([]);
+}
+
+marketData.start();
+
+const recorder = new FxuSettlementRecorder(marketData, settlementAverage, {
+  intervalMs: 10000,
+  outputFile: "./data/fxu-settlements.json",
+});
+
+recorder.start();
+
+let isTradeRunning = false;
+
+setInterval(async () => {
+  if (isTradeRunning) return;
+
+  const bist = marketData.getBistSnapshot();
+  const fxu = marketData.getFxuSnapshot();
+  const avg5 = settlementAverage.getAverage5();
+
+  const fxuSettlement = marketData.getViopSettlementPrice();
+  const bistClose = marketData.getBistClosePrice();
+
+  if (!bist || !fxu || avg5 == null) {
+    console.log("BIST, FXU veya avg5 verisi henüz hazır değil, bekleniyor...");
+    return;
+  }
+
+  const fxuLast = Number(fxu.last);
+  const settlementAverage5 = Number(avg5);
+
+  if (!Number.isFinite(fxuLast) || !Number.isFinite(settlementAverage5)) {
+    console.log("FXU last veya avg5 sayısal değil, tur atlandı.");
+    return;
+  }
+
+  console.log("FXU last:", fxuLast);
+  console.log("FXU settlement price:", fxuSettlement);
+  console.log("FXU settlement 5 günlük ortalama:", settlementAverage5);
+
+  isTradeRunning = true;
+
+  try {
+    const position = await api.getViopPositionsDetails();
+
+    let positionSide = "NONE";
+
+    if (position && position.sozlesmeAdi === process.env.VIOP_SOZLESME) {
+      const positionAmount = Number(position.tutar || 0);
+
+      if (positionAmount > 0) {
+        positionSide = "LONG";
+      } else if (positionAmount < 0) {
+        positionSide = "SHORT";
+      }
+    }
+
+    if (fxuLast > settlementAverage5) {
+      if (positionSide === "NONE") {
+        await api.placeViopBuyOrder({
+          sozlesme: process.env.VIOP_SOZLESME,
+          quantity: 1,
+          orderType: "PKP",
+          duration: "KIE",
+          aksamSeansi: 0,
+        });
+
+        console.log("Sinyal LONG: Pozisyon yoktu, 1 adet LONG acildi.");
+      } else if (positionSide === "SHORT") {
+        await api.placeViopBuyOrder({
+          sozlesme: process.env.VIOP_SOZLESME,
+          quantity: 2,
+          orderType: "PKP",
+          duration: "KIE",
+          aksamSeansi: 0,
+        });
+
+        console.log("Sinyal LONG: SHORT kapatildi ve LONG acildi.");
+      } else if (positionSide === "LONG") {
+        console.log("Sinyal LONG: Zaten LONG pozisyon var, yeni poz alinmadi.");
+      }
+
+      return;
+    }
+
+    if (fxuLast < settlementAverage5) {
+      if (positionSide === "NONE") {
+        await api.placeViopSellOrder({
+          sozlesme: process.env.VIOP_SOZLESME,
+          quantity: 1,
+          orderType: "PKP",
+          duration: "KIE",
+          aksamSeansi: 0,
+        });
+
+        console.log("Sinyal SHORT: Pozisyon yoktu, 1 adet SHORT acildi.");
+      } else if (positionSide === "LONG") {
+        await api.placeViopSellOrder({
+          sozlesme: process.env.VIOP_SOZLESME,
+          quantity: 2,
+          orderType: "PKP",
+          duration: "KIE",
+          aksamSeansi: 0,
+        });
+
+        console.log("Sinyal SHORT: LONG kapatildi ve SHORT acildi.");
+      } else if (positionSide === "SHORT") {
+        console.log("Sinyal SHORT: Zaten SHORT pozisyon var, yeni poz alinmadi.");
+      }
+
+      return;
+    }
+
+    console.log("FXU last avg5'e esit, islem yapilmadi.");
+  } catch (error) {
+    console.error("Emir strateji hatasi:", error.message);
+  } finally {
+    isTradeRunning = false;
+  }
+}, 2000);
+</file>
+
+<file path="services/api_engine.js">
+const fetch = require("node-fetch");
+
+const DEFAULT_BASE_URL = "https://esubedv2.meksa.com.tr/entegrasyon/optimus_trade.asp";
+
+class MeksaApi {
+  constructor({
+    customerNo,
+    password = null,
+    rumuz = null,
+    token = null,
+    baseUrl = DEFAULT_BASE_URL,
+  }) {
+    if (!customerNo) {
+      throw new Error("customerNo zorunludur.");
+    }
+
+    this.customerNo = customerNo;
+    this.password = password;
+    this.rumuz = rumuz;
+    this.token = token;
+    this.baseUrl = baseUrl;
+  }
+
+  async createToken() {
+    if (!this.password || !this.rumuz) {
+      throw new Error("Token almak için password ve rumuz gerekli.");
+    }
+
+    const response = await this._send({
+      KOMUT: "TOKEN_CREATE",
+      MusteriNo: this.customerNo,
+      Sifre: this.password,
+      Rumuz: this.rumuz,
+    });
+
+    const tokenLine = response.lines.find((line) => line.key === "TOKEN");
+    if (!tokenLine?.value) {
+      throw new Error("Token response içinde TOKEN alanı bulunamadı.");
+    }
+
+    this.token = tokenLine.value;
+    return response;
+  }
+
+  async getSpotBalance() {
+    return this._sendAuthenticated({
+      KOMUT: "HESAPBILGI",
+    });
+  }
+
+  async getSpotPortfolio() {
+    return this._sendAuthenticated({
+      KOMUT: "HESAPPORTFOY",
+    });
+  }
+
+  async getSpotOrders({ gerceklesenOzet = 2 } = {}) {
+    return this._sendAuthenticated({
+      KOMUT: "HESAPGUNLUKISLEM",
+      GerceklesenOzet: gerceklesenOzet,
+    });
+  }
+
+  async placeBuyOrder({ symbol, quantity, price = 0, orderType = "PYS", duration = "KIE" }) {
+    this._validateOrder({ symbol, quantity, price, orderType, duration });
+
+    return this._sendAuthenticated({
+      KOMUT: "HISSEAL",
+      MIKTAR: quantity,
+      HISSE: symbol,
+      FIYAT: price,
+      ORDER_TYPE: orderType,
+      SURE: duration,
+    });
+  }
+
+  async placeSellOrder({ symbol, quantity, price = 0, orderType = "PYS", duration = "KIE" }) {
+    this._validateOrder({ symbol, quantity, price, orderType, duration });
+
+    return this._sendAuthenticated({
+      KOMUT: "HISSESAT",
+      MIKTAR: quantity,
+      HISSE: symbol,
+      FIYAT: price,
+      ORDER_TYPE: orderType,
+      SURE: duration,
+    });
+  }
+
+  async improveOrder({ ref, price, duration = "GUN" }) {
+    if (!ref || !price) {
+      throw new Error("Emir iyileştirmek için ref ve price gerekli.");
+    }
+
+    return this._sendAuthenticated({
+      KOMUT: "HISSEIYILESTIR",
+      REF: ref,
+      FIYAT: price,
+      SURE: duration,
+    });
+  }
+
+  async cancelOrder({ ref }) {
+    if (!ref) {
+      throw new Error("Emir iptali için ref gerekli.");
+    }
+
+    return this._sendAuthenticated({
+      KOMUT: "HISSEEMIRSIL",
+      REF: ref,
+    });
+  }
+
+  async getViopCollateral() {
+    return this._sendAuthenticated({
+      KOMUT: "BISTECH_VIOP_TEMINATLAR",
+    });
+  }
+
+  async getViopFreeBalanceDetails() {
+    const balance = await this.getViopCollateral();
+    const freeBalanceLine = balance?.lines?.find(line => line.key === "BVTM");
+    if (!freeBalanceLine?.value) return null;
+
+    const fields = freeBalanceLine.value.split("|");
+
+    return {
+      hesapNo: fields[0] || null,
+      tarih: fields[1] || null,
+      gerekliBaslangicTeminati: parseFloat(fields[7] || "0"),
+      serbesBakiye: parseFloat(fields[10] || "0"),
+      karZarar: fields[15] || null,
+      rawFields: fields
+    }
+  }
+
+  async getViopPositions() {
+    return this._sendAuthenticated({
+      KOMUT: "BISTECH_VIOP_POZISYONLAR",
+    });
+  }
+
+  async getViopPositionsDetails() {
+    const positions = await this.getViopPositions();
+    const detailsLines = positions.lines.find(line => line.key === "BVPS");
+    if (!detailsLines?.value) return null;
+
+    const details = detailsLines?.value.split("|");
+
+    return {
+      hesapNo: details[0] || null,
+      tarih: details[1] || null,
+      sozlesmeAdi: details[3] || null,
+      gunIciKarZarar: details[4] || null,
+      maliyet: details[11] || null,
+      tutar: details[12] || null,
+      uzlastirmaFiyati: details[13] || null,
+      totalPnl: details[14] || null,
+      pnlPostion: details[16] || null,
+    }
+  }
+
+  async getViopOrders({ gerceklesenDetay = 1 } = {}) {
+    return this._sendAuthenticated({
+      KOMUT: "BISTECH_VIOP_EMIRLER",
+      GerceklesenDetay: gerceklesenDetay,
+    });
+  }
+
+
+
+  async getViopOrdersDetails({ gerceklesenDetay = 1 } = {}) {
+
+    const response = await this.getViopOrders({ gerceklesenDetay });
+    const rows = response?.data?.BVGI ?? [];
+
+    return rows.map((item) => {
+    const f =
+      item.fields && item.fields.length > 0
+        ? item.fields
+        : String(item.value || "").split("|");
+
+    return {
+      hesapNo: this._toText(f[0]),
+      emirNo: this._toText(f[1]),
+      sozlesme: this._toText(f[2]),
+
+      yonKod: this._toText(f[3]),
+      yon: this._parseDirection(f[3]),
+
+      miktar: this._toNumber(f[4]),
+      kalanMiktar: this._toNumber(f[5]),
+      fiyat: this._toNumber(f[6]),
+      tutar: this._toNumber(f[7]),
+
+      durum: this._toText(f[8]),
+      kanal: this._toText(f[9]),
+      tarih: this._toText(f[10]),
+      islemZamani: this._toText(f[12]),
+
+      referansNo: this._toText(f[13]),
+      emirTipi: this._toText(f[18]),
+      araciKodu: this._toText(f[20]),
+
+      sonFiyat: this._toNumber(f[21]),
+      saat: this._toText(f[24]),
+
+      rawFields: f,
+    };
+  });
+}
+
+  async placeViopBuyOrder({
+    sozlesme,
+    quantity = 1,
+    price = 0,
+    orderType = "PKP", // lmt değilse piyasa anlamına gelir.
+    duration = "KIE",
+    aksamSeansi = 0,
+  }) {
+    this._validateViopOrder({
+      sozlesme, // F_XUO300428
+      quantity, // kontrat miktarı
+      price,
+      orderType,
+      duration,
+      aksamSeansi,
+    });
+
+    return this._sendAuthenticated({
+      KOMUT: "BISTECH_VIOP_EMIR",
+      SOZLESME: sozlesme,
+      MIKTAR: quantity,
+      FIYAT: price,
+      ISLEM: "A",
+      ORDER_TYPE: orderType,
+      SURE: duration,
+      AKSAM_SEANSI: aksamSeansi ? 1 : 0,
+    });
+  }
+
+  async placeViopSellOrder({
+    sozlesme = "F_XU0300426",
+    quantity = 1,
+    price = 0,
+    orderType = "PKP",
+    duration = "KIE",
+    aksamSeansi = 0,
+  }) {
+    this._validateViopOrder({
+      sozlesme,
+      quantity,
+      price,
+      orderType,
+      duration,
+      aksamSeansi,
+    });
+
+    return this._sendAuthenticated({
+      KOMUT: "BISTECH_VIOP_EMIR",
+      SOZLESME: sozlesme,
+      MIKTAR: quantity,
+      FIYAT: price,
+      ISLEM: "S",
+      ORDER_TYPE: orderType,
+      SURE: duration,
+      AKSAM_SEANSI: aksamSeansi ? 1 : 0,
+    });
+  }
+
+  async improveViopOrder({ ref, price, duration = "GUN", sureTarih = null }) {
+    if (!ref || !price) {
+      throw new Error("VIOP emir iyileştirmek için ref ve price gerekli.");
+    }
+
+    return this._sendAuthenticated({
+      KOMUT: "BISTECH_VIOP_EMIR_IYILESTIRME",
+      REF: ref,
+      Fiyat: price,
+      Sure: duration,
+      SureTarih: sureTarih,
+    });
+  }
+
+  async cancelViopOrder({ ref }) {
+    if (!ref) {
+      throw new Error("VIOP emir iptali için ref gerekli.");
+    }
+
+    return this._sendAuthenticated({
+      KOMUT: "BISTECH_VIOP_EMIR_IPTAL",
+      REF: ref,
+    });
+  }
+
+  async _sendAuthenticated(payload) {
+    if (!this.token) {
+      throw new Error("Bu işlem için token gerekli. Önce createToken çağırın veya token verin.");
+    }
+
+    return this._send({
+      ...payload,
+      MusteriNo: this.customerNo,
+      TOKEN: this.token,
+    });
+  }
+
+  async _send(payload) {
+    const body = new URLSearchParams();
+
+    for (const [key, value] of Object.entries(payload)) {
+      if (value !== undefined && value !== null) {
+        body.append(key, String(value));
+      }
+    }
+
+    const httpResponse = await fetch(this.baseUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body,
+    });
+
+    const text = await httpResponse.text();
+    const parsed = this._parseResponse(text);
+
+    if (!httpResponse.ok) {
+      throw new Error(`HTTP hata: ${httpResponse.status} - ${httpResponse.statusText}`);
+    }
+
+    if (!parsed.ok) {
+      const message = parsed.message || "API işlemi başarısız oldu.";
+      throw new Error(message);
+    }
+
+    return parsed;
+  }
+
+  _parseResponse(text) {
+    const lines = text
+      .split(/\r?\n/)
+      .map((line) => line.trim())
+      .filter(Boolean);
+
+    const parsedLines = [];
+    const grouped = {};
+
+    for (const line of lines) {
+      const separatorIndex = line.indexOf(":");
+
+      if (separatorIndex === -1) {
+        parsedLines.push({
+          raw: line,
+          key: null,
+          value: line,
+          fields: [line],
+        });
+        continue;
+      }
+
+      const key = line.slice(0, separatorIndex).trim();
+      const value = line.slice(separatorIndex + 1).trim();
+      const fields = value.includes("|") ? value.split("|").map((item) => item.trim()) : [value];
+      const item = { raw: line, key, value, fields };
+
+      parsedLines.push(item);
+
+      if (!grouped[key]) {
+        grouped[key] = [];
+      }
+      grouped[key].push(item);
+    }
+
+    return {
+      ok: lines[0] === "OK",
+      message: grouped.MSG?.[0]?.value || null,
+      lines: parsedLines,
+      data: grouped,
+      raw: text,
+    };
+  }
+
+  _validateOrder({ symbol, quantity, price, orderType, duration }) {
+    if (!symbol) {
+      throw new Error("symbol zorunludur.");
+    }
+
+    if (!quantity || Number(quantity) <= 0) {
+      throw new Error("quantity sıfırdan büyük olmalıdır.");
+    }
+
+    if (!["PYS", "LMT"].includes(orderType)) {
+      throw new Error("orderType sadece PYS veya LMT olabilir.");
+    }
+
+    if (orderType === "LMT" && Number(price) <= 0) {
+      throw new Error("LMT emirlerinde price sıfırdan büyük olmalıdır.");
+    }
+
+    if (!["KIE", "GUN"].includes(duration)) {
+      throw new Error("duration sadece KIE veya GUN olabilir.");
+    }
+  }
+
+  _validateViopOrder({
+    sozlesme,
+    quantity,
+    price,
+    orderType,
+    duration,
+    aksamSeansi,
+  }) {
+    if (!sozlesme) {
+      throw new Error("sozlesme zorunludur.");
+    }
+
+    if (!quantity || Number(quantity) <= 0) {
+      throw new Error("quantity sıfırdan büyük olmalıdır.");
+    }
+
+    if (!["PKP", "LMT"].includes(orderType)) {
+      throw new Error("orderType sadece PKP veya LMT olabilir.");
+    }
+
+    if (orderType === "LMT" && Number(price) <= 0) {
+      throw new Error("LMT emirlerinde price sıfırdan büyük olmalıdır.");
+    }
+
+    if (!["KIE", "GUN"].includes(duration)) {
+      throw new Error("duration sadece KIE veya GUN olabilir.");
+    }
+
+    if (![0, 1, "0", "1", false, true].includes(aksamSeansi)) {
+      throw new Error("aksamSeansi sadece 0 veya 1 olabilir.");
+    }
+  }
+
+  _toNumber(value) {
+  if (value === "" || value == null) return null;
+  const n = Number(String(value).replace(",", "."));
+  return Number.isNaN(n) ? null : n;
+  }
+
+  _toText(value) {
+  return value === "" ? null : value;
+  }
+
+  _parseDirection(code) {
+  if (code === "A") return "AL";
+  if (code === "S") return "SAT";
+  return code;
+  }
+}
+
+module.exports = { MeksaApi };
+</file>
+
+</files>

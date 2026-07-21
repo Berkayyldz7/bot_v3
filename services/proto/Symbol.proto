@@ -1,0 +1,82 @@
+syntax="proto2";
+package messages;
+
+option java_package = "com.matriksdata.radix.messages";
+option java_outer_classname = "Symbol";
+
+message SymbolMessage {
+  required sint32 symbolId = 1;
+  optional string symbolCode = 2; // sembol kodu
+  optional string symbolDesc = 3; // sembol açıklaması
+  optional string updateDate = 4; // date format: yyyy-MM-ddTHH:mm:ssZ
+  optional double bid = 5; // anlık alış fiyatı
+  optional double ask = 6; // anlık satış fiyatı
+  optional double low = 7; // seans içinde işlem gören en düşük fiyat
+  optional double high = 8; // seans içinde işlem gören en yüksek fiyat
+  optional double last = 9; // son fiyat (islem fiyati)
+  optional double dayClose = 10; // bir önceki günün kapanış fiyatı
+  optional int32  fractionCount = 11; // fiyat için virgülden sonraki basamak sayısı.
+  optional double dailyLow = 12; // gun içinde işlem gören en düşük fiyat
+  optional double dailyHigh = 13; // gun içinde işlem gören en yüksek fiyat
+  optional double quantity = 14; // işlem adedi
+  optional double volume = 15; // işlem hacmi
+  optional double difference = 16; // fark = işlem gören son fiyat - onceki gunun kapanis fiyati
+  optional double differencePercent = 17; // fark yuzdesi
+  optional double days7DifPer = 18; // 7 gunluk fark yuzdesi
+  optional double days30DifPer = 19; // 30 gunluk fark yuzdesi
+  optional double week52DifPer = 20; // 52 haftalik fark yuzdesi
+  optional double monthHigh = 21; // ay icindeki en yuksek deger
+  optional double monthLow = 22; // ay icindeki en dusuk deger
+  optional double yearHigh = 23; // yil icindeki en yuksek deger
+  optional double yearLow = 24; // yil icndeki en dusuk deger
+  optional double priceMean = 25; // gun icindeki agirlikli fiyat ortalamasi
+  optional double limitUp = 26; // tavan fiyat
+  optional double limitDown = 27; // taban fiyat
+  optional double netProceeds = 28; // Net Kar
+  optional double priceProceeds = 29; // F/K
+  optional double marketValue = 30; // Piyasa Degeri
+  optional double marketValueUsd = 31; // Piyasa Degeri USD
+  optional double marValBookVal = 32; // PD/DD
+  optional double equity = 33; // Ozsermaye
+  optional double capital = 34; // Sermaye
+  optional double circulationShare = 35; // Dolasimdaki Pay
+  optional double circulationSharePer = 36; // Dolasimdaki pay yuzdesi
+  optional string symbolGroup = 37; // Sembol grubu A,B,C,D
+  optional double dailyVolume = 38; // Gunluk işlem hacmi
+  optional bool   sessionIsOpen = 39; // true false
+  optional bool   openForTrade = 40; // true false
+  optional double priceStep = 41; // fiyat adimis
+  optional double basePrice = 42;
+  optional string symbolType = 43;
+  optional int32 tradeFraction = 44;
+  optional string stockSymbolCode = 45;
+  optional string tradeDate = 46;
+  optional double open = 47;
+  optional double dailyQuantity = 48;
+  optional string actionType = 49;
+  optional int32 brutSwap = 50  [deprecated=true];
+  optional double totalTradeCount = 51;
+  optional double lastQuantity = 52;
+  optional double weekLow = 53;
+  optional double weekHigh = 54;
+  optional double weekClose = 55;
+  optional double monthClose = 56;
+  optional double yearClose = 57;
+  optional string period = 58;
+  optional double shiftedNetProceed = 59;
+  optional int64 askSize = 60;
+  optional int64 bidSize = 61;
+  optional double eqPrice = 62;  // equilibrium price
+  optional double eqQuantity = 63;
+  optional double eqRemainingBidQuantity = 64;
+  optional double eqRemainingAskQuantity = 65;
+  optional double prevYearClose = 66;
+  optional int32 direciton = 67;
+  optional double weekPriceMean = 68;
+  optional double monthPriceMean = 69;
+  optional double yearPriceMean = 70;
+  optional double beta100 = 71;
+  optional double cashNetDividend = 72;
+  optional double dividendYield = 73;
+  optional int32 stockStatus = 74;
+}

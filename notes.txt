@@ -1,0 +1,360 @@
+================================================================================
+                    MEKSA BACKOFFICE API - TOKEN TABANLI
+================================================================================
+
+BASE URL: https://esubedv2.meksa.com.tr/entegrasyon/optimus_trade.asp
+METHOD: POST
+
+================================================================================
+LOGIN (TOKEN ALMA)
+================================================================================
+
+NOT:
+--------
+"Rumuz" değeri "Meksa Token" uygulamasından alınacak.
+
+REQUEST:
+--------
+KOMUT=TOKEN_CREATE
+MusteriNo=12345
+Sifre=mypassword
+Rumuz=123456 (MeksaTokenApp)
+
+RESPONSE:
+---------
+OK
+MSG:Success
+TOKEN:9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+PARSING (C#):
+-------------
+string[] response = apiresponse.Split(new string[] { "\n" }, StringSplitOptions.None);
+if (response.Length > 2 && response[2].Contains("TOKEN"))
+{
+    var tokenResponse = response[2].Split(new string[] { ":" }, StringSplitOptions.None);
+    if (tokenResponse.Length > 1)
+    {
+        string token = tokenResponse[1].Trim();
+    }
+}
+
+================================================================================
+SPOT BAKİYE
+================================================================================
+
+REQUEST:
+--------
+KOMUT=HESAPBILGI
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+CBK:0|Cari Bakiye
+CB1:10947582.24|T1 Cari Bakiye
+CB2:11026379.4|T2 Cari Bakiye
+CHS:196646.18|Hisse Toplamı
+OAL:14994071.02|Overall
+T1B:14796211.64|T1 Overall
+T2B:14717096.6|T2 Overall
+LMT:0|Müşteri Kredi Limiti
+ASN:91106.73|Alım Satım Neti
+HOT:G|Güniçi
+GIL:50545922.46|Güniçi İşlem Limiti
+HOT:N|Normal
+ISL:50545922.46|Islem Limiti
+HOT:F|Fon
+FNL:0|Fonlama İşlem Limiti
+HOT:K|Kredili
+KIL:0|Kredili İşlem Limiti
+HOT:A|Açığa Satış
+ASL:0|Açığa İşlem Limiti
+HOT:O|Özel
+HOT:V|Virmanlı Satış
+AVL:39519543.06|Virmanlı Satış Limiti
+OZK:100|T Kredi Özkaynak Oranı 
+OZ1:100|T1 Kredi Özkaynak Oranı 
+OZ2:100|T2 Kredi Özkaynak Oranı
+
+================================================================================
+SPOT POZİSYON
+================================================================================
+
+REQUEST:
+--------
+KOMUT=HESAPPORTFOY
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+HSP:1|CARI|AKBNK|68.15|36577|2492722.55|68.25|36577|0|0|0|0|-0.15
+HSP:1|CARI|GUBRF|484.25|-5334|-2582989.50|481.62|-5334|0|0|0|0|0.55
+HSP:1|CARI|ISCTR|12.99|196851|2557094.49|13.10|196851|0|188822|0|2452797.78|-0.87
+
+================================================================================
+SPOT EMİRLER
+================================================================================
+
+REQUEST:
+--------
+KOMUT=HESAPGUNLUKISLEM
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+GerceklesenOzet=2
+
+RESPONSE:
+---------
+OK
+MSG:Success
+HGI:1|33521692|ASTOR|SAT|12563|0|197.3|2478679.9|??|Gerçekleşti|KIE||1|N|16:08:41|16:08:41|8131784043954354768|33521692|12563|01/04/2026|PYS|
+HGI:1|33521346|EKGYO|AL|2815|0|19.7|55455.5|??|Gerçekleşti|KIE||1|N|16:02:24|16:02:24|8131784048246160410|33521346|2815|01/04/2026|PYS|
+
+
+================================================================================
+SPOT ALIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PYS, LMT (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=HISSEAL
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+MIKTAR=1
+HISSE=PETKM
+FIYAT=0
+ORDER_TYPE=PYS
+SURE=KIE
+
+RESPONSE:
+---------
+OK
+MSG:Alım emriniz iletildi!
+HSR:33522113
+
+
+================================================================================
+SPOT SATIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PYS, LMT (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=HISSESAT
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+MIKTAR=1
+HISSE=PETKM
+FIYAT=0
+ORDER_TYPE=PYS
+SURE=KIE
+
+RESPONSE:
+---------
+OK
+MSG:Satış emriniz iletildi!
+HSR:33522115
+
+
+================================================================================
+SPOT EMİR İYİLEŞTİRME
+================================================================================
+
+REQUEST:
+--------
+KOMUT=HISSEIYILESTIR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=33522077
+FIYAT=19.11
+SURE=GUN
+
+RESPONSE:
+---------
+OK
+MSG:İyileştirme emri iletildi!
+CAL:HESAPGUNLUKISLEM
+
+
+================================================================================
+SPOT EMİR İPTAL
+================================================================================
+
+REQUEST:
+--------
+KOMUT=HISSEEMIRSIL
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=33522077
+
+RESPONSE:
+---------
+OK
+MSG:Success
+Silme emri iletildi!
+CAL:HESAPGUNLUKISLEM
+
+
+================================================================================
+VIOP BAKİYE (TEMİNAT)
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_TEMINATLAR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVTM:12345|01/04/2026|||3494071.02|0.00|3494071.02|658204|658204|248920|3084787.02|3084787.02|0|2835867.02|İşlemde|258910|0|0|0|
+
+
+================================================================================
+VIOP POZİSYON
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_POZISYONLAR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVPS:12345|01/04/2026|Müş|F_XU0300426|248920.00|0|37|37|-37|-173||14901.00000|-5531130.000000|14949.00000|258910.00|90270.000430|-7770.000000|-5 531 130 TL|-17760.000000|14974.17919
+
+
+================================================================================
+VIOP EMİRLER
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIRLER
+GerceklesenDetay=1
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVGI:12345|6601238|F_XU0300426|S|37|0|14901|5513370|Gerçekleşen|KIE|01/04/2026||01/04/2026 16:10:01|70D9E68402EA6FA4|6601238|37||0|LMT||KIE|14901||0|16:10:01
+BVGI:12345|6599806|F_XU0300426|S|4|0|14953.25|598130|Gerçekleşen|KIE|01/04/2026||01/04/2026 13:05:10|70D9E68401E6E97B|6599806|4||0|LMT||KIE|14953.25||0|13:05:10
+
+
+================================================================================
+VIOP ALIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PKP (Piyasa), LMT (Limitli)  (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+SOZLESME=F_EKGYO0426
+MIKTAR=1
+FIYAT=0
+ISLEM=A
+ORDER_TYPE=PKP
+SURE=KIE
+AKSAM_SEANSI=0
+
+RESPONSE:
+---------
+OK
+MSG:Alım emriniz iletildi!
+HSR:6601398
+
+
+================================================================================
+VIOP SATIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PKP (Piyasa), LMT (Limitli)  (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+SOZLESME=F_EKGYO0426
+MIKTAR=1
+FIYAT=0
+ISLEM=S
+ORDER_TYPE=PKP
+SURE=KIE
+AKSAM_SEANSI=0
+
+RESPONSE:
+---------
+OK
+MSG:Satış emriniz iletildi!
+HSR:6601399
+
+
+================================================================================
+VIOP EMİR İYİLEŞTİRME
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR_IYILESTIRME
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=6601370
+Fiyat=17.71
+Sure=GUN
+SureTarih=01.04.2026
+
+RESPONSE:
+---------
+OK
+MSG:Success
+İyileştirme emri iletildi!
+CAL:BISTECH_VIOP_EMIRLER
+
+
+================================================================================
+VIOP EMİR İPTAL
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR_IPTAL
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=6601370
+
+RESPONSE:
+---------
+OK
+MSG:
+Silme emri iletildi!
+CAL:BISTECH_VIOP_EMIRLER

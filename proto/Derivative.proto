@@ -1,0 +1,92 @@
+syntax="proto2";
+package messages;
+
+option java_package = "com.matriksdata.radix.messages";
+option java_outer_classname = "Derivative";
+
+message DerivativeMessage {
+  required sint32 symbolId = 1;
+  optional string symbolCode = 2; // sembol kodu
+  optional string symbolDesc = 3; // sembol açıklaması
+  optional string updateDate = 4; // date format: yyyy-MM-ddTHH:mm:ss
+  optional double bid = 5; // son alış fiyatı
+  optional double ask = 6; // son satış fiyatı
+  optional double low = 7; // seans içinde işlem gören en düşük fiyat
+  optional double high = 8; // seans içinde işlem gören en yüksek fiyat
+  optional double last = 9; // son fiyat (islem fiyati)
+  optional double dayClose = 10; // önceki günün kapanış fiyatı
+  optional int32 fractionCount = 11; // fiyat için virgülden sonraki basamak sayısı.
+  optional double strikePrice = 12; // kullanim fiyati
+  optional string maturity = 13; // date format:  yyyy-MM-dd ISO format
+  optional string underlying = 14; // dayanak varlik
+
+  enum OptionClass {
+	P = 0;
+	C = 1;
+  }
+  optional OptionClass optionClass = 15; //option class P:PUT C:CALL
+  optional double dailyLow = 16; // gun içinde işlem gören en düşük fiyat
+  optional double dailyHigh = 17; // gun içinde işlem gören en yüksek fiyat
+  optional double quantity = 18; // işlem adedi
+  optional double volume = 19; // işlem hacmi
+  optional double difference = 20; // fark = işlem gören son fiyat - onceki gunun kapanis fiyati
+  optional double differencePercent = 21; // fark yuzdesi
+  optional double sevenDaysDifPer = 22; // 7 gunluk fark yuzdesi
+  optional double thirtyDaysDifPer = 23; // 30 gunluk fark yuzdesi
+  optional double fiftytwoWeekDifPer = 24; // 52 haftalik fark yuzdesi
+  optional double monthHigh = 25; // ay icindeki en yuksek deger
+  optional double monthLow = 26; // ay icindeki en dusuk deger
+  optional double yearHigh = 27; // yil icindeki en yuksek deger
+  optional double yearLow = 28; // yil icndeki en dusuk deger
+  optional double priceMean = 29; // gun icindeki agirlikli fiyat ortalamasi
+  optional double limitUp = 30; // tavan fiyat
+  optional double limitDown = 31; // taban fiyat
+  optional double settlement = 32; // uzlasma
+  optional double settlementPerDif = 33; // uzlasma %fark
+  optional int64 openInterest = 34; // Acik pozisyon
+  optional double theoricalPrice = 35; // Teorik Fiyat
+  optional double theoricelPDifPer = 36; // Teorik Fiyat %Fark
+  optional double dailyVolume = 37; // Gunluk içi toplam hacim
+  optional double priceStep = 38; // Fiyat adimi
+  optional bool   openForTrade = 39; // true false
+  optional string tradeDate = 40;
+  optional double open = 41;
+  optional double dailyQuantity = 42; // Gün ici toplam lot (adet)
+  optional string actionType = 43; //
+  optional int32 brutSwap = 44 [deprecated=true];
+  optional double totalTradeCount = 45;
+  optional double lastQuantity = 46; // Son işlem adedi
+  optional double openInterestChange = 47;
+  optional double weekLow = 48; // Haftalık Düşük
+  optional double weekHigh = 49; // Haftalık Yüksek
+  optional double weekClose = 50; // Önceki Hafta Kapanış
+  optional double monthClose = 51; // Önceki Ay Kapanış
+  optional double yearClose = 52; // Önceki Yıl Kapanış
+  optional double preSettlement = 53; // Önceki Uzlaşma
+  optional int64 askSize = 54;
+  optional int64 bidSize = 55;
+  optional double rate = 56;
+  optional string marketMaker = 57; // Piyasa Yapıcı (İhraçcı)
+  optional double marketMakerAsk = 58; // Piyasa Yapıcı Satış
+  optional double marketMakerBid = 59; // Piyasa Yapıcı Alış
+  optional double prevYearClose = 60; // Önceki Yıl Kapanış
+  optional string riskLevel = 61; // Risk seviyesi
+  optional double marketMakerAskClose = 62;
+  optional double marketMakerBidClose = 63;
+  optional double weekPriceMean = 64;
+  optional double monthPriceMean = 65;
+  optional double yearPriceMean = 66;
+  optional double incrementalQuantity = 67 [ default = 0.0];
+
+  enum PublishReason{
+      UPDATE = 0;
+      REFRESH = 1;
+  }
+  optional PublishReason publishReason = 68 [default = UPDATE];
+  optional int32 stockStatus = 69;
+  optional double eqPrice = 70;  // Teorik eşleşme fiyatı
+  optional double eqQuantity = 71; // Teorik eşleşme adet
+  optional double eqRemainingBidQuantity = 72; // Teorik eşleşme kalan alış adedi
+  optional double eqRemainingAskQuantity = 73; // Teorik eşleşme kalan satış adedi
+  optional double initialMargin = 74; //Başlangıç Teminatı
+}

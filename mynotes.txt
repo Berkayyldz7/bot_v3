@@ -1,0 +1,75 @@
+getviopFreeBalance() 
+
+* metoduyla meksa api üzerinden viop hesabındaki bakiye bilgilerini temin edildi.
+* bu metod bir obje return eder. 
+-->
+  Viop bakiye : {
+
+  hesapNo: '106637',
+  tarih: '09/04/2026',
+  toplamBakiye: 30052.85,
+  kullanilanTeminat: 0,
+  bosBakiye: 30052.85,
+  islemdekiBakiye: '0',
+  rawFields: [
+    '106637',   '09/04/2026',
+    '',         '',
+    '30052.85', '0.00',
+    '30052.85', '0',
+    '0',        '0',
+    '30052.85', '30052.85',
+    '0',        '30052.85',
+    '��lemde',  '0',
+    '0',        '0',
+    '0',        ''
+  ]
+
+}
+
+
+onUpdate metodu bir fonksiyon alıyor ve veri her güncellendiğinde tetikleniyor, 
+
+--> Dolayısıyla içine yazdığımız her kod veri her güncellendiğinde çalıştırılır.
+
+
+
+
+
+* setInterval kullanmadan verilere erişmeye çalışırsak veriler null dönüyor.
+
+  setInterval(() => {
+    console.log("XU100:", liveDataClient.getLatestPrice("XU100"));
+    console.log("F_XU0300426:", liveDataClient.getLatestPrice("F_XU0300426"));
+    }, 1000);
+
+
+
+
+
+SPOT 
+
+
+    const balance = await api.getSpotBalance();
+    console.log("Spot bakiye:", balance.data.CBK?.[0]?.fields?.[0]);
+
+    const orders = await api.getSpotOrders();
+    console.log(
+      "Son emirler:",
+      (orders.data.HGI || []).map((item) => item.fields)
+    );
+
+
+
+
+
+
+16403
+
+
+Uzlaşı ortalamaları için günler, haftaiçi günler al ( 18:15 uzlaşı fiyatı )
+
+17.04.2026 --> 16896.00
+16.04.2026 --> 16403.00
+15.04.2026 --> 16563.00
+14.04.2026 --> 16550.00
+13.04.2026 --> 16463.00

@@ -1,0 +1,150 @@
+================================================================================
+VIOP BAKİYE (TEMİNAT)
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_TEMINATLAR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVTM:12345|01/04/2026|||3494071.02|0.00|3494071.02|658204|658204|248920|3084787.02|3084787.02|0|2835867.02|İşlemde|258910|0|0|0|
+
+
+================================================================================
+VIOP POZİSYON
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_POZISYONLAR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVPS:12345|01/04/2026|Müş|F_XU0300426|248920.00|0|37|37|-37|-173||14901.00000|-5531130.000000|14949.00000|258910.00|90270.000430|-7770.000000|-5 531 130 TL|-17760.000000|14974.17919
+
+
+================================================================================
+VIOP EMİRLER
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIRLER
+GerceklesenDetay=1
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+
+RESPONSE:
+---------
+OK
+MSG:Success
+BVGI:12345|6601238|F_XU0300426|S|37|0|14901|5513370|Gerçekleşen|KIE|01/04/2026||01/04/2026 16:10:01|70D9E68402EA6FA4|6601238|37||0|LMT||KIE|14901||0|16:10:01
+BVGI:12345|6599806|F_XU0300426|S|4|0|14953.25|598130|Gerçekleşen|KIE|01/04/2026||01/04/2026 13:05:10|70D9E68401E6E97B|6599806|4||0|LMT||KIE|14953.25||0|13:05:10
+
+
+================================================================================
+VIOP ALIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PKP (Piyasa), LMT (Limitli)  (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+SOZLESME=F_EKGYO0426
+MIKTAR=1
+FIYAT=0
+ISLEM=A
+ORDER_TYPE=PKP
+SURE=KIE
+AKSAM_SEANSI=0
+
+RESPONSE:
+---------
+OK
+MSG:Alım emriniz iletildi!
+HSR:6601398
+
+
+================================================================================
+VIOP SATIŞ EMRİ
+================================================================================
+
+NOT:
+--------
+ORDER_TYPE: PKP (Piyasa), LMT (Limitli)  (LMT ise FIYAT parametresi 0 olamaz)
+SURE: KIE, GUN
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+SOZLESME=F_EKGYO0426
+MIKTAR=1
+FIYAT=0
+ISLEM=S
+ORDER_TYPE=PKP
+SURE=KIE
+AKSAM_SEANSI=0
+
+RESPONSE:
+---------
+OK
+MSG:Satış emriniz iletildi!
+HSR:6601399
+
+
+================================================================================
+VIOP EMİR İYİLEŞTİRME
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR_IYILESTIRME
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=6601370
+Fiyat=17.71
+Sure=GUN
+SureTarih=01.04.2026
+
+RESPONSE:
+---------
+OK
+MSG:Success
+İyileştirme emri iletildi!
+CAL:BISTECH_VIOP_EMIRLER
+
+
+================================================================================
+VIOP EMİR İPTAL
+================================================================================
+
+REQUEST:
+--------
+KOMUT=BISTECH_VIOP_EMIR_IPTAL
+MusteriNo=12345
+TOKEN=9F3A2D1E-5B7C-4E8A-A6D9-1C2F3E4B5A6D
+REF=6601370
+
+RESPONSE:
+---------
+OK
+MSG:
+Silme emri iletildi!
+CAL:BISTECH_VIOP_EMIRLER
