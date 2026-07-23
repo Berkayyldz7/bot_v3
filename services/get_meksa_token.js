@@ -99,8 +99,9 @@ async function checkTelegramCommands() {
           console.log(`2FA Kodu algılandı: ${messageText}`);
           await sendTelegramMessage("⏳ 2FA kodu alındı, yeni token üretiliyor...");
 
-          // 1. RUMUZ alanına yaz
+          // 1. RUMUZ alanına yaz ve process.env'yi güncelle
           updateEnvFile("RUMUZ", messageText);
+          process.env.RUMUZ = messageText;
 
           try {
             // 2. npm run take_token çalıştır ve token'ı al
