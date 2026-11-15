@@ -456,4 +456,4 @@ setInterval(async () => {
     } finally {
         isTradeRunning = false;
     }
-}, 2000);
+}, 60000);

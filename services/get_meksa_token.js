@@ -120,7 +120,7 @@ async function checkTelegramCommands() {
             console.log("PM2 yeniden başlatılıyor (pm2 restart all)...");
             
             // 6. PM2'yi yeniden başlat
-            exec("pm2 restart all", (err, stdout, stderr) => {
+            exec("pm2 restart berkay-stable-v1", (err, stdout, stderr) => {
               if (err) {
                 console.error("PM2 başlatma hatası:", err.message);
               } else {

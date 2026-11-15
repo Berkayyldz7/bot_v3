@@ -1,0 +1,840 @@
+[
+  {
+    "date": "2026-04-16",
+    "settlement": 16403
+  },
+  {
+    "date": "2026-04-17",
+    "settlement": 16896
+  },
+  {
+    "date": "2026-04-15",
+    "settlement": 16563
+  },
+  {
+    "date": "2026-04-14",
+    "settlement": 16550
+  },
+  {
+    "date": "2026-04-13",
+    "settlement": 16463
+  },
+  {
+    "date": "2026-04-18",
+    "symbolCode": "F_XU0300426",
+    "settlement": 168960,
+    "updateDate": "2026-04-17T23:00:00.000+03",
+    "recordedAt": "2026-04-19T22:40:01.463Z"
+  },
+  {
+    "date": "2026-04-19",
+    "symbolCode": "F_XU0300426",
+    "settlement": 1689622,
+    "updateDate": "2026-04-17T23:00:00.000+03",
+    "recordedAt": "2026-04-19T23:52:21.104Z"
+  },
+  {
+    "date": "2026-04-20",
+    "symbolCode": "F_XU0300426",
+    "settlement": 16755,
+    "updateDate": "2026-04-20T18:09:59.000+03",
+    "recordedAt": "2026-04-20T15:15:00.423Z"
+  },
+  {
+    "date": "2026-05-20",
+    "settlement": 16506
+  },
+  {
+    "date": "2026-05-21",
+    "settlement": 15207
+  },
+  {
+    "date": "2026-05-22",
+    "settlement": 16157
+  },
+  {
+    "date": "2026-05-25",
+    "settlement": 16109
+  },
+  {
+    "date": "2026-05-26",
+    "settlement": 15759
+  },
+  {
+    "date": "2026-06-01",
+    "symbolCode": "F_XU0300626",
+    "settlement": 15774,
+    "updateDate": "2026-06-01T18:09:59.000+03",
+    "recordedAt": "2026-06-01T15:15:02.837Z"
+  },
+  {
+    "date": "2026-06-02",
+    "symbolCode": "F_XU0300626",
+    "settlement": 16457,
+    "updateDate": "2026-06-02T18:09:59.000+03",
+    "recordedAt": "2026-06-02T15:15:08.206Z"
+  },
+  {
+    "date": "2026-06-03",
+    "symbolCode": "F_XU0300626",
+    "settlement": 16087,
+    "updateDate": "2026-06-03T18:09:59.000+03",
+    "recordedAt": "2026-06-03T15:15:03.864Z"
+  },
+  {
+    "date": "2026-06-04",
+    "symbolCode": "F_XU0300626",
+    "settlement": 15922,
+    "updateDate": "2026-06-04T18:09:59.000+03",
+    "recordedAt": "2026-06-04T15:15:09.270Z"
+  },
+  {
+    "date": "2026-06-05",
+    "symbolCode": "F_XU0300626",
+    "settlement": 15602,
+    "updateDate": "2026-06-05T18:09:56.000+03",
+    "recordedAt": "2026-06-05T15:15:04.819Z"
+  },
+  {
+    "date": "2026-06-08",
+    "symbolCode": "F_XU0300626",
+    "settlement": 15866,
+    "updateDate": "2026-06-05T22:59:59.000+03",
+    "recordedAt": "2026-06-08T15:15:00.806Z"
+  },
+  {
+    "date": "2026-06-09",
+    "symbolCode": "F_XU0300626",
+    "settlement": 15724,
+    "updateDate": "2026-06-05T22:59:59.000+03",
+    "recordedAt": "2026-06-09T15:15:06.346Z"
+  },
+  {
+    "date": "2026-06-10",
+    "symbolCode": "F_XU0300626",
+    "settlement": 15748,
+    "updateDate": "2026-06-05T22:59:59.000+03",
+    "recordedAt": "2026-06-09T15:15:06.346Z"
+  },
+  {
+    "date": "2026-06-11",
+    "symbolCode": "F_XU0300626",
+    "settlement": 15724,
+    "updateDate": "2026-06-05T22:59:59.000+03",
+    "recordedAt": "2026-06-09T15:15:06.346Z"
+  },
+  {
+    "date": "2026-06-12",
+    "symbolCode": "F_XU0300626",
+    "settlement": 16029,
+    "updateDate": "2026-06-05T22:59:59.000+03",
+    "recordedAt": "2026-06-09T15:15:06.346Z"
+  },
+  {
+    "date": "2026-06-15",
+    "symbolCode": "X30YVADE",
+    "settlement": 16753,
+    "updateDate": "2026-06-15T18:09:58.000+03",
+    "recordedAt": "2026-06-15T15:15:10.757Z"
+  },
+  {
+    "date": "2026-06-16",
+    "symbolCode": "X30YVADE",
+    "settlement": 16850,
+    "updateDate": "2026-06-16T18:09:59.000+03",
+    "recordedAt": "2026-06-16T15:15:12.636Z"
+  },
+  {
+    "date": "2026-06-17",
+    "symbolCode": "X30YVADE",
+    "settlement": 16723,
+    "updateDate": "2026-06-17T18:09:59.000+03",
+    "recordedAt": "2026-06-17T15:15:27.660Z"
+  },
+  {
+    "date": "2026-06-18",
+    "symbolCode": "X30YVADE",
+    "settlement": 17235,
+    "updateDate": "2026-06-18T18:10:00.000+03",
+    "recordedAt": "2026-06-18T15:15:29.453Z"
+  },
+  {
+    "date": "2026-06-19",
+    "symbolCode": "X30YVADE",
+    "settlement": 17116,
+    "updateDate": "2026-06-19T18:09:59.000+03",
+    "recordedAt": "2026-06-19T15:15:15.717Z"
+  },
+  {
+    "date": "2026-06-20",
+    "symbolCode": "X30YVADE",
+    "settlement": 17116,
+    "updateDate": "2026-06-19T22:59:58.000+03",
+    "recordedAt": "2026-06-20T15:15:17.485Z"
+  },
+  {
+    "date": "2026-06-21",
+    "symbolCode": "X30YVADE",
+    "settlement": 17116,
+    "updateDate": "2026-06-19T22:59:58.000+03",
+    "recordedAt": "2026-06-21T15:15:19.108Z"
+  },
+  {
+    "date": "2026-06-22",
+    "symbolCode": "X30YVADE",
+    "settlement": 17095,
+    "updateDate": "2026-06-22T18:10:00.000+03",
+    "recordedAt": "2026-06-22T15:15:20.857Z"
+  },
+  {
+    "date": "2026-06-23",
+    "symbolCode": "X30YVADE",
+    "settlement": 16857,
+    "updateDate": "2026-06-23T18:09:59.000+03",
+    "recordedAt": "2026-06-23T15:15:22.462Z"
+  },
+  {
+    "date": "2026-06-24",
+    "symbolCode": "X30YVADE",
+    "settlement": 17492,
+    "updateDate": "2026-06-24T18:09:59.000+03",
+    "recordedAt": "2026-06-24T15:15:24.131Z"
+  },
+  {
+    "date": "2026-06-25",
+    "symbolCode": "X30YVADE",
+    "settlement": 17375,
+    "updateDate": "2026-06-25T18:10:00.000+03",
+    "recordedAt": "2026-06-25T15:15:25.963Z"
+  },
+  {
+    "date": "2026-06-26",
+    "symbolCode": "X30YVADE",
+    "settlement": 17300,
+    "updateDate": "2026-06-26T18:10:00.000+03",
+    "recordedAt": "2026-06-26T15:15:27.628Z"
+  },
+  {
+    "date": "2026-06-29",
+    "symbolCode": "X30YVADE",
+    "settlement": 17179,
+    "updateDate": "2026-06-29T18:09:59.000+03",
+    "recordedAt": "2026-06-29T15:15:17.870Z"
+  },
+  {
+    "date": "2026-06-30",
+    "symbolCode": "X30YVADE",
+    "settlement": 17189,
+    "updateDate": "2026-06-30T18:09:59.000+03",
+    "recordedAt": "2026-06-30T15:15:19.683Z"
+  },
+  {
+    "date": "2026-07-01",
+    "symbolCode": "X30YVADE",
+    "settlement": 17475,
+    "updateDate": "2026-07-01T18:09:59.000+03",
+    "recordedAt": "2026-07-01T15:15:20.389Z"
+  },
+  {
+    "date": "2026-07-02",
+    "symbolCode": "X30YVADE",
+    "settlement": 17535,
+    "updateDate": "2026-07-02T18:09:59.000+03",
+    "recordedAt": "2026-07-02T15:15:22.159Z"
+  },
+  {
+    "date": "2026-07-03",
+    "symbolCode": "X30YVADE",
+    "settlement": 17437,
+    "updateDate": "2026-07-03T18:09:59.000+03",
+    "recordedAt": "2026-07-03T15:15:23.636Z"
+  },
+  {
+    "date": "2026-07-06",
+    "symbolCode": "X30YVADE",
+    "settlement": 17518,
+    "updateDate": "2026-07-06T18:10:00.000+03",
+    "recordedAt": "2026-07-06T15:15:28.736Z"
+  },
+  {
+    "date": "2026-07-07",
+    "symbolCode": "X30YVADE",
+    "settlement": 17500,
+    "updateDate": "2026-07-07T18:09:58.000+03",
+    "recordedAt": "2026-07-07T15:15:00.727Z"
+  },
+  {
+    "date": "2026-07-08",
+    "symbolCode": "X30YVADE",
+    "settlement": 17153,
+    "updateDate": "2026-07-08T18:09:59.000+03",
+    "recordedAt": "2026-07-08T15:15:02.734Z"
+  },
+  {
+    "date": "2026-07-09",
+    "symbolCode": "X30YVADE",
+    "settlement": 17008,
+    "updateDate": "2026-07-09T10:07:23.000+03",
+    "recordedAt": "2026-07-09T15:15:04.672Z"
+  },
+  {
+    "date": "2026-07-10",
+    "symbolCode": "X30YVADE",
+    "settlement": 17244,
+    "updateDate": "2026-07-10T18:09:59.000+03",
+    "recordedAt": "2026-07-10T15:15:01.058Z"
+  },
+  {
+    "date": "2026-07-13",
+    "symbolCode": "X30YVADE",
+    "settlement": 16722,
+    "updateDate": "2026-07-13T18:09:59.000+03",
+    "recordedAt": "2026-07-13T15:15:20.221Z"
+  },
+  {
+    "date": "2026-07-14",
+    "symbolCode": "X30YVADE",
+    "settlement": 16676,
+    "updateDate": "2026-07-14T18:09:59.000+03",
+    "recordedAt": "2026-07-14T15:15:22.066Z"
+  },
+  {
+    "date": "2026-07-16",
+    "symbolCode": "X30YVADE",
+    "settlement": 16745,
+    "updateDate": "2026-07-16T18:09:59.000+03",
+    "recordedAt": "2026-07-16T15:15:26.504Z"
+  },
+  {
+    "date": "2026-07-17",
+    "symbolCode": "X30YVADE",
+    "settlement": 16220,
+    "updateDate": "2026-07-17T18:09:59.000+03",
+    "recordedAt": "2026-07-17T15:15:28.219Z"
+  },
+  {
+    "date": "2026-07-18",
+    "symbolCode": "X30YVADE",
+    "settlement": 16220,
+    "updateDate": "2026-07-17T22:59:59.000+03",
+    "recordedAt": "2026-07-18T19:38:00.190Z"
+  },
+  {
+    "date": "2026-07-20",
+    "symbolCode": "X30YVADE",
+    "settlement": 16498,
+    "updateDate": "2026-07-20T18:09:59.000+03",
+    "recordedAt": "2026-07-20T15:15:18.559Z"
+  },
+  {
+    "date": "2026-07-21",
+    "symbolCode": "X30YVADE",
+    "settlement": 16377,
+    "updateDate": "2026-07-21T18:09:58.000+03",
+    "recordedAt": "2026-07-21T15:15:20.522Z"
+  },
+  {
+    "date": "2026-07-22",
+    "symbolCode": "X30YVADE",
+    "settlement": 16570,
+    "updateDate": "2026-07-22T18:09:59.000+03",
+    "recordedAt": "2026-07-22T15:15:22.288Z"
+  },
+  {
+    "date": "2026-07-23",
+    "symbolCode": "X30YVADE",
+    "settlement": 16396,
+    "updateDate": "2026-07-14T23:00:00.000+03",
+    "recordedAt": "2026-07-23T15:15:16.894Z"
+  },
+  {
+    "date": "2026-07-24",
+    "symbolCode": "X30YVADE",
+    "settlement": 16261,
+    "updateDate": "2026-07-24T18:09:58.000+03",
+    "recordedAt": "2026-07-24T15:15:15.474Z"
+  },
+  {
+    "date": "2026-07-27",
+    "symbolCode": "X30YVADE",
+    "settlement": 16074,
+    "updateDate": "2026-07-27T18:09:59.000+03",
+    "recordedAt": "2026-07-27T15:15:25.173Z"
+  },
+  {
+    "date": "2026-07-28",
+    "symbolCode": "X30YVADE",
+    "settlement": 15924,
+    "updateDate": "2026-07-28T18:09:59.000+03",
+    "recordedAt": "2026-07-28T15:15:27.422Z"
+  },
+  {
+    "date": "2026-07-29",
+    "symbolCode": "X30YVADE",
+    "settlement": 15736,
+    "updateDate": "2026-07-29T18:09:59.000+03",
+    "recordedAt": "2026-07-29T15:15:29.215Z"
+  },
+  {
+    "date": "2026-07-30",
+    "symbolCode": "X30YVADE",
+    "settlement": 15395,
+    "updateDate": "2026-07-30T18:10:00.000+03",
+    "recordedAt": "2026-07-30T15:15:01.230Z"
+  },
+  {
+    "date": "2026-07-31",
+    "symbolCode": "X30YVADE",
+    "settlement": 15578,
+    "updateDate": "2026-07-31T18:09:59.000+03",
+    "recordedAt": "2026-07-31T15:15:03.466Z"
+  },
+  {
+    "date": "2026-08-03",
+    "symbolCode": "X30YVADE",
+    "settlement": 15521,
+    "updateDate": "2026-08-03T18:09:59.000+03",
+    "recordedAt": "2026-08-03T15:15:24.232Z"
+  },
+  {
+    "date": "2026-08-04",
+    "symbolCode": "X30YVADE",
+    "settlement": 15834,
+    "updateDate": "2026-08-04T18:09:59.000+03",
+    "recordedAt": "2026-08-04T15:15:26.197Z"
+  },
+  {
+    "date": "2026-08-05",
+    "symbolCode": "X30YVADE",
+    "settlement": 15864,
+    "updateDate": "2026-08-05T18:10:00.000+03",
+    "recordedAt": "2026-08-05T15:15:27.932Z"
+  },
+  {
+    "date": "2026-08-06",
+    "symbolCode": "X30YVADE",
+    "settlement": 15926,
+    "updateDate": "2026-08-06T18:09:59.000+03",
+    "recordedAt": "2026-08-06T15:15:29.988Z"
+  },
+  {
+    "date": "2026-08-07",
+    "symbolCode": "X30YVADE",
+    "settlement": 15846,
+    "updateDate": "2026-08-06T18:09:59.000+03",
+    "recordedAt": "2026-08-06T15:15:29.988Z"
+  },
+  {
+    "date": "2026-08-10",
+    "symbolCode": "X30YVADE",
+    "settlement": 15851,
+    "updateDate": "2026-08-10T18:09:59.000+03",
+    "recordedAt": "2026-08-10T15:15:24.525Z"
+  },
+  {
+    "date": "2026-08-11",
+    "symbolCode": "X30YVADE",
+    "settlement": 15689,
+    "updateDate": "2026-08-11T18:10:00.000+03",
+    "recordedAt": "2026-08-11T15:15:26.329Z"
+  },
+  {
+    "date": "2026-08-12",
+    "symbolCode": "X30YVADE",
+    "settlement": 16190,
+    "updateDate": "2026-08-12T18:09:59.000+03",
+    "recordedAt": "2026-08-12T15:15:28.050Z"
+  },
+  {
+    "date": "2026-08-13",
+    "symbolCode": "X30YVADE",
+    "settlement": 16191,
+    "updateDate": "2026-08-13T18:09:58.000+03",
+    "recordedAt": "2026-08-13T15:15:00.039Z"
+  },
+  {
+    "date": "2026-08-14",
+    "symbolCode": "X30YVADE",
+    "settlement": 16207,
+    "updateDate": "2026-08-14T18:09:59.000+03",
+    "recordedAt": "2026-08-14T15:15:10.966Z"
+  },
+  {
+    "date": "2026-08-17",
+    "symbolCode": "X30YVADE",
+    "settlement": 16200,
+    "updateDate": "2026-08-17T18:09:58.000+03",
+    "recordedAt": "2026-08-17T15:15:20.279Z"
+  },
+  {
+    "date": "2026-08-18",
+    "symbolCode": "X30YVADE",
+    "settlement": 16189,
+    "updateDate": "2026-08-18T18:10:00.000+03",
+    "recordedAt": "2026-08-18T15:15:22.151Z"
+  },
+  {
+    "date": "2026-08-19",
+    "symbolCode": "X30YVADE",
+    "settlement": 16759,
+    "updateDate": "2026-08-19T18:09:59.000+03",
+    "recordedAt": "2026-08-19T15:15:23.946Z"
+  },
+  {
+    "date": "2026-08-20",
+    "symbolCode": "X30YVADE",
+    "settlement": 16607,
+    "updateDate": "2026-08-20T18:09:59.000+03",
+    "recordedAt": "2026-08-20T15:15:25.741Z"
+  },
+  {
+    "date": "2026-08-21",
+    "symbolCode": "X30YVADE",
+    "settlement": 16808,
+    "updateDate": "2026-08-21T18:10:00.000+03",
+    "recordedAt": "2026-08-21T15:15:27.670Z"
+  },
+  {
+    "date": "2026-08-24",
+    "symbolCode": "X30YVADE",
+    "settlement": 16835,
+    "updateDate": "2026-08-24T18:09:59.000+03",
+    "recordedAt": "2026-08-24T15:15:14.681Z"
+  },
+  {
+    "date": "2026-08-25",
+    "symbolCode": "X30YVADE",
+    "settlement": 17492,
+    "updateDate": "2026-08-25T18:09:59.000+03",
+    "recordedAt": "2026-08-25T15:15:16.611Z"
+  },
+  {
+    "date": "2026-08-26",
+    "symbolCode": "X30YVADE",
+    "settlement": 17632,
+    "updateDate": "2026-08-26T18:09:59.000+03",
+    "recordedAt": "2026-08-26T15:15:18.685Z"
+  },
+  {
+    "date": "2026-08-27",
+    "symbolCode": "X30YVADE",
+    "settlement": 17452,
+    "updateDate": "2026-08-27T18:09:59.000+03",
+    "recordedAt": "2026-08-27T15:15:20.502Z"
+  },
+  {
+    "date": "2026-08-28",
+    "symbolCode": "X30YVADE",
+    "settlement": 17389,
+    "updateDate": "2026-08-28T18:10:00.000+03",
+    "recordedAt": "2026-08-28T15:15:22.372Z"
+  },
+  {
+    "date": "2026-08-31",
+    "symbolCode": "X30YVADE",
+    "settlement": 17201,
+    "updateDate": "2026-08-31T18:09:58.000+03",
+    "recordedAt": "2026-08-31T15:15:23.888Z"
+  },
+  {
+    "date": "2026-09-01",
+    "symbolCode": "X30YVADE",
+    "settlement": 17153,
+    "updateDate": "2026-09-01T18:09:58.000+03",
+    "recordedAt": "2026-09-01T15:15:03.946Z"
+  },
+  {
+    "date": "2026-09-02",
+    "symbolCode": "X30YVADE",
+    "settlement": 17030,
+    "updateDate": "2026-09-02T18:09:59.000+03",
+    "recordedAt": "2026-09-02T15:15:05.980Z"
+  },
+  {
+    "date": "2026-09-03",
+    "symbolCode": "X30YVADE",
+    "settlement": 16941,
+    "updateDate": "2026-09-03T18:09:59.000+03",
+    "recordedAt": "2026-09-03T15:15:07.907Z"
+  },
+  {
+    "date": "2026-09-04",
+    "symbolCode": "X30YVADE",
+    "settlement": 17050,
+    "updateDate": "2026-09-04T18:09:59.000+03",
+    "recordedAt": "2026-09-04T15:15:09.932Z"
+  },
+  {
+    "date": "2026-09-07",
+    "symbolCode": "X30YVADE",
+    "settlement": 17360,
+    "updateDate": "2026-09-07T18:09:59.000+03",
+    "recordedAt": "2026-09-07T15:15:28.759Z"
+  },
+  {
+    "date": "2026-09-08",
+    "symbolCode": "X30YVADE",
+    "settlement": 17770,
+    "updateDate": "2026-09-08T18:09:59.000+03",
+    "recordedAt": "2026-09-08T15:15:00.700Z"
+  },
+  {
+    "date": "2026-09-09",
+    "symbolCode": "X30YVADE",
+    "settlement": 17905,
+    "updateDate": "2026-09-09T18:09:58.000+03",
+    "recordedAt": "2026-09-09T15:15:02.711Z"
+  },
+  {
+    "date": "2026-09-10",
+    "symbolCode": "X30YVADE",
+    "settlement": 17661,
+    "updateDate": "2026-09-10T18:09:59.000+03",
+    "recordedAt": "2026-09-10T15:15:27.272Z"
+  },
+  {
+    "date": "2026-09-11",
+    "symbolCode": "X30YVADE",
+    "settlement": 17830,
+    "updateDate": "2026-09-11T18:09:59.000+03",
+    "recordedAt": "2026-09-11T15:15:28.900Z"
+  },
+  {
+    "date": "2026-09-14",
+    "symbolCode": "X30YVADE",
+    "settlement": 17552,
+    "updateDate": "2026-09-14T18:09:59.000+03",
+    "recordedAt": "2026-09-14T15:15:18.010Z"
+  },
+  {
+    "date": "2026-09-15",
+    "symbolCode": "X30YVADE",
+    "settlement": 17141,
+    "updateDate": "2026-09-15T18:09:59.000+03",
+    "recordedAt": "2026-09-15T15:15:19.701Z"
+  },
+  {
+    "date": "2026-09-16",
+    "symbolCode": "X30YVADE",
+    "settlement": 15891,
+    "updateDate": "2026-09-16T18:09:59.000+03",
+    "recordedAt": "2026-09-16T15:15:03.116Z"
+  },
+  {
+    "date": "2026-09-17",
+    "symbolCode": "X30YVADE",
+    "settlement": 16427,
+    "updateDate": "2026-09-17T18:09:59.000+03",
+    "recordedAt": "2026-09-17T15:15:04.822Z"
+  },
+  {
+    "date": "2026-09-18",
+    "symbolCode": "X30YVADE",
+    "settlement": 16252,
+    "updateDate": "2026-09-18T18:09:58.000+03",
+    "recordedAt": "2026-09-18T15:15:06.830Z"
+  },
+  {
+    "date": "2026-09-21",
+    "symbolCode": "X30YVADE",
+    "settlement": 16451,
+    "updateDate": "2026-09-21T18:09:59.000+03",
+    "recordedAt": "2026-09-21T15:15:07.283Z"
+  },
+  {
+    "date": "2026-09-22",
+    "symbolCode": "X30YVADE",
+    "settlement": 16483,
+    "updateDate": "2026-09-22T18:09:59.000+03",
+    "recordedAt": "2026-09-22T15:15:08.955Z"
+  },
+  {
+    "date": "2026-09-23",
+    "symbolCode": "X30YVADE",
+    "settlement": 16714,
+    "updateDate": "2026-09-23T18:09:59.000+03",
+    "recordedAt": "2026-09-23T15:15:10.713Z"
+  },
+  {
+    "date": "2026-09-24",
+    "symbolCode": "X30YVADE",
+    "settlement": 16275,
+    "updateDate": "2026-09-24T18:09:57.000+03",
+    "recordedAt": "2026-09-24T15:15:12.433Z"
+  },
+  {
+    "date": "2026-09-25",
+    "symbolCode": "X30YVADE",
+    "settlement": 16293,
+    "updateDate": "2026-09-25T18:09:59.000+03",
+    "recordedAt": "2026-09-25T15:15:14.338Z"
+  },
+  {
+    "date": "2026-09-28",
+    "symbolCode": "X30YVADE",
+    "settlement": 15921,
+    "updateDate": "2026-09-28T18:09:59.000+03",
+    "recordedAt": "2026-09-28T15:15:03.905Z"
+  },
+  {
+    "date": "2026-09-29",
+    "symbolCode": "X30YVADE",
+    "settlement": 15597,
+    "updateDate": "2026-09-29T18:09:59.000+03",
+    "recordedAt": "2026-09-29T15:15:05.789Z"
+  },
+  {
+    "date": "2026-09-30",
+    "symbolCode": "X30YVADE",
+    "settlement": 15240,
+    "updateDate": "2026-09-30T18:09:59.000+03",
+    "recordedAt": "2026-09-30T15:15:07.831Z"
+  },
+  {
+    "date": "2026-10-01",
+    "symbolCode": "X30YVADE",
+    "settlement": 15543,
+    "updateDate": "2026-10-01T18:09:59.000+03",
+    "recordedAt": "2026-10-01T15:15:09.606Z"
+  },
+  {
+    "date": "2026-10-02",
+    "symbolCode": "X30YVADE",
+    "settlement": 15541,
+    "updateDate": "2026-10-02T18:09:59.000+03",
+    "recordedAt": "2026-10-02T15:15:11.703Z"
+  },
+  {
+    "date": "2026-10-05",
+    "symbolCode": "X30YVADE",
+    "settlement": 15784,
+    "updateDate": "2026-10-05T18:09:57.000+03",
+    "recordedAt": "2026-10-05T15:15:02.839Z"
+  },
+  {
+    "date": "2026-10-06",
+    "symbolCode": "X30YVADE",
+    "settlement": 15697,
+    "updateDate": "2026-10-06T18:09:59.000+03",
+    "recordedAt": "2026-10-06T15:15:04.859Z"
+  },
+  {
+    "date": "2026-10-07",
+    "symbolCode": "X30YVADE",
+    "settlement": 15339,
+    "updateDate": "2026-10-07T18:09:59.000+03",
+    "recordedAt": "2026-10-07T15:15:07.031Z"
+  },
+  {
+    "date": "2026-10-08",
+    "symbolCode": "X30YVADE",
+    "settlement": 15400,
+    "updateDate": "2026-10-08T18:09:58.000+03",
+    "recordedAt": "2026-10-08T15:15:09.089Z"
+  },
+  {
+    "date": "2026-10-09",
+    "symbolCode": "X30YVADE",
+    "settlement": 15397,
+    "updateDate": "2026-10-09T18:09:58.000+03",
+    "recordedAt": "2026-10-09T15:15:11.108Z"
+  },
+  {
+    "date": "2026-10-12",
+    "symbolCode": "X30YVADE",
+    "settlement": 15242,
+    "updateDate": "2026-10-12T18:09:59.000+03",
+    "recordedAt": "2026-10-12T15:15:24.205Z"
+  },
+  {
+    "date": "2026-10-13",
+    "symbolCode": "X30YVADE",
+    "settlement": 15423,
+    "updateDate": "2026-10-13T18:09:59.000+03",
+    "recordedAt": "2026-10-13T15:15:19.798Z"
+  },
+  {
+    "date": "2026-10-14",
+    "symbolCode": "X30YVADE",
+    "settlement": 15286,
+    "updateDate": "2026-10-14T18:09:59.000+03",
+    "recordedAt": "2026-10-14T15:15:17.585Z"
+  },
+  {
+    "date": "2026-10-15",
+    "symbolCode": "X30YVADE",
+    "settlement": 15172,
+    "updateDate": "2026-10-15T18:09:58.000+03",
+    "recordedAt": "2026-10-15T15:15:19.824Z"
+  },
+  {
+    "date": "2026-10-16",
+    "symbolCode": "X30YVADE",
+    "settlement": 14711,
+    "updateDate": "2026-10-16T18:09:59.000+03",
+    "recordedAt": "2026-10-16T15:15:21.868Z"
+  },
+  {
+    "date": "2026-10-19",
+    "symbolCode": "X30YVADE",
+    "settlement": 14411,
+    "updateDate": "2026-10-19T18:09:59.000+03",
+    "recordedAt": "2026-10-19T15:15:24.479Z"
+  },
+  {
+    "date": "2026-10-20",
+    "symbolCode": "X30YVADE",
+    "settlement": 14803,
+    "updateDate": "2026-10-20T18:09:59.000+03",
+    "recordedAt": "2026-10-20T15:15:26.151Z"
+  },
+  {
+    "date": "2026-10-21",
+    "symbolCode": "X30YVADE",
+    "settlement": 14617,
+    "updateDate": "2026-10-21T18:09:59.000+03",
+    "recordedAt": "2026-10-21T15:15:28.012Z"
+  },
+  {
+    "date": "2026-10-22",
+    "symbolCode": "X30YVADE",
+    "settlement": 14111,
+    "updateDate": "2026-10-22T18:09:59.000+03",
+    "recordedAt": "2026-10-22T15:15:29.653Z"
+  },
+  {
+    "date": "2026-10-23",
+    "symbolCode": "X30YVADE",
+    "settlement": 13902,
+    "updateDate": "2026-10-23T18:09:59.000+03",
+    "recordedAt": "2026-10-23T15:15:01.784Z"
+  },
+  {
+    "date": "2026-10-26",
+    "symbolCode": "X30YVADE",
+    "settlement": 14017,
+    "updateDate": "2026-10-26T18:09:59.000+03",
+    "recordedAt": "2026-10-26T15:15:13.031Z"
+  },
+  {
+    "date": "2026-10-27",
+    "symbolCode": "X30YVADE",
+    "settlement": 13954,
+    "updateDate": "2026-10-27T18:09:59.000+03",
+    "recordedAt": "2026-10-27T15:15:14.924Z"
+  },
+  {
+    "date": "2026-10-28",
+    "symbolCode": "X30YVADE",
+    "settlement": 13986,
+    "updateDate": "2026-10-28T12:39:59.000+03",
+    "recordedAt": "2026-10-28T15:15:16.902Z"
+  },
+  {
+    "date": "2026-10-30",
+    "symbolCode": "X30YVADE",
+    "settlement": 13471,
+    "updateDate": "2026-10-30T18:09:58.000+03",
+    "recordedAt": "2026-10-30T15:15:04.360Z"
+  }
+]
