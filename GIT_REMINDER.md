@@ -25,9 +25,10 @@ Sunucuda yaptığın hiçbir değişiklik `git push` yapılmadan GitHub'a gitmez
 | `data/backup/` | Uzlaşı yedekleri (31_08_2026, 01_11_2026) | Elle alınan yedekler, kalsın. |
 
 ### 3. GitHub push yetkisi kontrol edildi
-- Sunucuda kayıtlı GitHub kimlik bilgisi **yok** (token yok, SSH anahtarı yok, `gh` yok).
-- Okuma (`git fetch`) çalışıyor ama **push için token gerekiyor.**
-- Ne yapılacağı aşağıdaki "Push / Token" bölümünde.
+- Başta sunucuda kayıtlı GitHub kimlik bilgisi yoktu (token, SSH anahtarı, `gh` yoktu).
+- Fine-grained token oluşturuldu ve sunucuda SSH terminalinden girildi, `~/.git-credentials`'a kaydedildi.
+- `dev` ve `stable-2026-11-16` GitHub'a push edildi ✅. `main` değişmedi.
+- **Token bitiş tarihi: 16 Aralık 2026 (Çarşamba).** Bu tarihten sonra push "Authentication failed" hatası verir → aşağıdaki "Push / Token" adımlarını tekrarla.
 
 ---
 
@@ -64,8 +65,9 @@ GitHub artık şifreyle push kabul etmiyor, **Personal Access Token (PAT)** gere
 
 1. GitHub → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token
 2. Repository access: sadece `bot_v3`. Permissions: **Contents: Read and write**.
-3. Bir son kullanma tarihi seç ve **o tarihi buraya yaz:** `Token bitiş tarihi: ____________`
-4. Sunucuda bir kere kaydet:
+3. Bir son kullanma tarihi seç ve **o tarihi buraya yaz:** `Token bitiş tarihi: 16 Aralık 2026`
+4. Sunucuda bir kere kaydet. **Bunu sunucunun kendi SSH terminalinde yap.** Claude'un içindeki `!` komutları kullanıcı adı/şifre giremez ("could not read Username" hatası verir). Token'ı Claude'a yapıştırma.
+   Yenilerken eski kaydı silmek için önce: `rm ~/.git-credentials`
    ```bash
    git config --global credential.helper store
    git push -u origin dev     # Username: Berkayyldz7, Password: <token>
